@@ -86,7 +86,7 @@ function Footer() {
                 </li>
                 <li className="mb-2">
                   <Link
-                    href="/aarticles"
+                    href="/articles"
                     title="My Articles"
                     className="text-decoration-none"
                   >
