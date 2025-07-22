@@ -44,12 +44,12 @@ body {
 }
 
 a {
-  color: var(--linklight);
+  color: var(--linklight) !important;
   text-decoration: none;
 }
 
 a:hover {
-  color: var(--link-hover);
+  color: var(--link-hover) !important;
 }
 
 h1,
