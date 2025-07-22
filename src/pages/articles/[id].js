@@ -1,7 +1,7 @@
 import React from "react";
 
-function ArticleDetails() {
-  return <div>Articles Detailed Page</div>;
+function ArticleDetail() {
+  return <div>Article Detailed Page</div>;
 }
 
-export default ArticleDetails;
+export default ArticleDetail;
