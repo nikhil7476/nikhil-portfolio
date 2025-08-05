@@ -10,7 +10,6 @@ import {
   FaPhoneAlt,
   FaTwitter,
 } from "react-icons/fa";
-import NewsletterForm from "./NewsletterForm";
 
 function Footer() {
   return (
@@ -105,8 +104,7 @@ function Footer() {
               </ul>
             </Col>
             <Col xl={3} lg={3} md={6} sm={12} xs={12}>
-              <h2>Newsletter</h2>
-              <NewsletterForm />
+              <h2>Follow Me</h2>
               <ul className="list-unstyled d-flex gap-3">
                 <li className="mb-2">
                   <Link
