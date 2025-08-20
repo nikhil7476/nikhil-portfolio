@@ -12,7 +12,6 @@ export default function BlogList() {
       <MetaHead page="portfolio" />
       <Banner data={bannerData.article} />
       <Container className="my-5">
-        <h1 className="text-center mb-4 fw-bold">Latest Articles</h1>
         <Row className="g-4">
           {articlesData.map((article) => (
             <Col key={article.id} md={6} lg={4}>

@@ -27,9 +27,22 @@ export default function BlogSingle() {
         <title>{article.metaTitle}</title>
         <meta name="description" content={article.metaDescription} />
         <meta name="keywords" content={article.keywords.join(", ")} />
+        <link
+          rel="canonical"
+          href={`http://localhost:3000/articles${article.slug}`}
+        />
         <meta property="og:title" content={article.metaTitle} />
         <meta property="og:description" content={article.metaDescription} />
         <meta property="og:image" content={article.featuredImage} />
+        <meta property="og:type" content="website" />
+        <meta
+          property="og:url"
+          content={`http://localhost:3000/articles${article.slug}`}
+        />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content={article.metaTitle} />
+        <meta name="twitter:description" content={article.metaDescription} />
+        <meta name="twitter:image" content={article.featuredImage} />
       </Head>
       <section
         className="banner d-flex align-items-center text-white"

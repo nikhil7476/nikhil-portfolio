@@ -58,47 +58,27 @@ function Footer() {
               <h3>Useful Links</h3>
               <ul className="list-unstyled">
                 <li className="mb-2">
-                  <Link
-                    href="/about-me"
-                    title="About Me"
-                    className="text-decoration-none"
-                  >
+                  <Link href="/about-me" title="About Me">
                     About Me
                   </Link>
                 </li>
                 <li className="mb-2">
-                  <Link
-                    href="/services"
-                    title="My Services"
-                    className="text-decoration-none"
-                  >
+                  <Link href="/services" title="My Services">
                     Services
                   </Link>
                 </li>
                 <li className="mb-2">
-                  <Link
-                    href="/portfolio"
-                    title="My Portfolio"
-                    className="text-decoration-none"
-                  >
+                  <Link href="/portfolio" title="My Portfolio">
                     Portfolio
                   </Link>
                 </li>
                 <li className="mb-2">
-                  <Link
-                    href="/articles"
-                    title="My Articles"
-                    className="text-decoration-none"
-                  >
+                  <Link href="/articles" title="My Articles">
                     Articles
                   </Link>
                 </li>
                 <li className="mb-2">
-                  <Link
-                    href="/contact-me"
-                    title="Contact Me"
-                    className="text-decoration-none"
-                  >
+                  <Link href="/contact-me" title="Contact Me">
                     Contact Me
                   </Link>
                 </li>
@@ -110,8 +90,7 @@ function Footer() {
                 <li className="mb-2">
                   <Link
                     href="https://github.com/nikhil7476/"
-                    title="GitHub"
-                    className="text-decoration-none"
+                    title="GitHub: nikhil7476"
                     target="_blank"
                   >
                     <FaGithub />
@@ -120,8 +99,7 @@ function Footer() {
                 <li className="mb-2">
                   <Link
                     href="https://www.instagram.com/mishra_nikhil01/"
-                    title="Instagram"
-                    className="text-decoration-none"
+                    title="Instagram: mishra_nikhil01"
                     target="_blank"
                   >
                     <FaInstagram />
@@ -130,8 +108,7 @@ function Footer() {
                 <li className="mb-2">
                   <Link
                     href="https://www.linkedin.com/in/nikhil-mishra-664672180/"
-                    title="LinkedIn"
-                    className="text-decoration-none"
+                    title="LinkedIn: Nikhil Mishra"
                     target="_blank"
                   >
                     <FaLinkedin />
@@ -140,8 +117,7 @@ function Footer() {
                 <li className="mb-2">
                   <Link
                     href="https://x.com/mishranikhil01/"
-                    title="Twitter"
-                    className="text-decoration-none"
+                    title="Twitter: mishranikhil01"
                     target="_blank"
                   >
                     <FaTwitter />

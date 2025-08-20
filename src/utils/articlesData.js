@@ -18,25 +18,25 @@ const articlesData = [
     blog: `
 In today’s digital-first era, a website is no longer a luxury — it is a necessity. Businesses that fail to establish a strong online presence risk losing credibility and customers to competitors who understand the importance of being digitally visible. In 2025, a modern website goes far beyond having a few static pages. It’s about delivering speed, accessibility, and engaging experiences to users.
 
-## First Impressions Matter
+### First Impressions Matter
 A potential customer’s first interaction with your brand often happens online. A sleek, responsive, and user-friendly website sets the tone for how people perceive your business. A poorly designed site, on the other hand, can create distrust and push customers away instantly.
 
-## SEO Advantage
+### SEO Advantage
 Search engine optimization (SEO) plays a key role in visibility. A modern website, built with SEO best practices in mind, ensures that your business ranks well on Google and attracts organic traffic without relying heavily on paid ads.
 
-## Mobile-First Experience
+### Mobile-First Experience
 Over 70% of internet traffic in 2025 comes from mobile devices. Responsive design is no longer optional — it’s the standard. A website that adapts seamlessly across devices provides users with a consistent and satisfying experience.
 
-## Boosting Conversions
+### Boosting Conversions
 From strategically placed call-to-actions (CTAs) to lightning-fast loading speeds, a modern website is built to convert visitors into paying customers. Even minor optimizations in design and performance can result in significant business growth.
 
-## Trends to Watch in 2025
+### Trends to Watch in 2025
 - AI-driven chatbots for customer service  
 - Dark mode & motion UI for better user experiences  
 - Personalized website content powered by data  
 - Accessibility-first designs that include every user  
 
-## Conclusion: 
+### Conclusion: 
 In 2025, your website is not just a business card — it’s a powerful growth tool. Investing in a modern, responsive, and SEO-friendly website ensures long-term success.
     `,
   },
@@ -57,24 +57,24 @@ In 2025, your website is not just a business card — it’s a powerful growth t
     blog: `
 Choosing the right technology stack is one of the most important decisions for developers and businesses alike. In 2025, React and Next.js remain two of the most popular options.
 
-## React: The Core Library
+### React: The Core Library
 React is a powerful JavaScript library for building user interfaces. Its component-driven approach makes development faster and highly modular. It’s best suited for single-page applications (SPAs) that prioritize interactivity.
 
-## Next.js: The Framework Built on React
+### Next.js: The Framework Built on React
 Next.js takes React to the next level by adding powerful features like:  
 - Server-Side Rendering (SSR)  
 - Static Site Generation (SSG)  
 - Built-in API routes  
 - Image optimization and prefetching  
 
-## Performance & SEO
+### Performance & SEO
 While React alone requires additional setup for SEO, Next.js naturally supports it through SSR and SSG. This makes Next.js the preferred choice for businesses and content-heavy platforms that rely on Google visibility.
 
-## When to Choose What?
+### When to Choose What?
 - **React:** Great for small projects or SPAs where SEO is not critical.  
 - **Next.js:** Ideal for production-grade apps, business websites, and projects where performance and SEO matter.  
 
-## Conclusion:
+### Conclusion:
 Both React and Next.js are powerful, but in 2025, Next.js has emerged as the smarter choice for serious projects thanks to its built-in optimizations and scalability.
     `,
   },
@@ -95,25 +95,25 @@ Both React and Next.js are powerful, but in 2025, Next.js has emerged as the sma
     blog: `
 Every modern application needs a reliable database. While traditional relational databases like MySQL remain relevant, MongoDB has emerged as a favorite among developers due to its flexibility and scalability.
 
-## Why MongoDB Stands Out
+### Why MongoDB Stands Out
 MongoDB is a NoSQL database that stores data in a JSON-like structure, making it intuitive for developers familiar with JavaScript and APIs.
 
-## Flexibility at Scale
+### Flexibility at Scale
 Unlike relational databases, MongoDB doesn’t require rigid schemas. Developers can easily modify data structures without downtime — a game-changer for fast-growing projects.
 
-## Performance & Speed
+### Performance & Speed
 With features like indexing, aggregation pipelines, and in-memory storage, MongoDB ensures faster query execution. Its BSON format allows handling large datasets more efficiently.
 
-## Scalability for Modern Apps
+### Scalability for Modern Apps
 From e-commerce to IoT platforms, MongoDB scales horizontally using sharding. Businesses can serve millions of users while keeping performance intact.
 
-## Real-World Use Cases
+### Real-World Use Cases
 - Real-time analytics dashboards  
 - Social media platforms  
 - E-commerce inventory systems  
 - Content-heavy applications  
 
-## Conclusion:
+### Conclusion:
 MongoDB’s flexibility and performance make it one of the best choices for developers in 2025. It’s the database designed for the future of applications.
     `,
   },
@@ -134,25 +134,25 @@ MongoDB’s flexibility and performance make it one of the best choices for deve
     blog: `
 The web development landscape is evolving faster than ever. In 2025, businesses and developers must stay ahead by adopting new tools, technologies, and practices that redefine how websites and apps are built.
 
-## AI-Powered Personalization
+### AI-Powered Personalization
 Artificial intelligence is transforming user experiences by delivering personalized content, product suggestions, and dynamic interfaces.
 
-## Serverless Architecture
+### Serverless Architecture
 Serverless solutions reduce infrastructure overhead, making apps faster to deploy and more cost-efficient.
 
-## Progressive Web Apps (PWAs)
+### Progressive Web Apps (PWAs)
 PWAs combine the best of websites and native apps. They offer offline support, push notifications, and a seamless user experience.
 
-## Low-Code/No-Code Platforms
+### Low-Code/No-Code Platforms
 More businesses are turning to low-code tools to prototype apps quickly without depending solely on developers.
 
-## Focus on Cybersecurity
+### Focus on Cybersecurity
 As cyber threats rise, secure coding practices and compliance-first designs are becoming critical.
 
-## Web3 and Blockchain
+### Web3 and Blockchain
 Decentralized applications (dApps) are slowly entering mainstream, shaping the next era of internet applications.
 
-## Conclusion:
+### Conclusion:
 By staying updated with these trends, businesses can ensure their websites remain competitive and future-proof.
     `,
   },
@@ -174,24 +174,24 @@ By staying updated with these trends, businesses can ensure their websites remai
     blog: `
 A personal portfolio is the best way to showcase your skills, projects, and achievements. For developers, building one with Next.js and MongoDB offers both performance and scalability.
 
-## Step 1: Setup Next.js Project
+### Step 1: Setup Next.js Project
 Start with \`npx create-next-app\` to initialize your portfolio. Organize your project into pages like Home, About, Projects, and Contact.
 
-## Step 2: Design the UI
+### Step 2: Design the UI
 Use Tailwind CSS or Bootstrap to create a clean, responsive interface. Keep the design minimal and easy to navigate.
 
-## Step 3: Connect MongoDB
+### Step 3: Connect MongoDB
 Use MongoDB to store projects, blog posts, and contact form submissions. MongoDB Atlas makes cloud integration seamless.
 
-## Step 4: Add Dynamic Features
+### Step 4: Add Dynamic Features
 - Blog system with CRUD operations  
 - Contact form with database integration  
 - Project showcase with live previews  
 
-## Step 5: Deploy Your Portfolio
+### Step 5: Deploy Your Portfolio
 Platforms like Vercel offer one-click deployment for Next.js apps. Combine this with MongoDB Atlas for a professional, production-ready setup.
 
-## Conclusion:
+### Conclusion:
 A portfolio built with Next.js and MongoDB is fast, scalable, and SEO-friendly — the perfect digital resume for 2025.
     `,
   },
@@ -212,22 +212,22 @@ A portfolio built with Next.js and MongoDB is fast, scalable, and SEO-friendly �
     blog: `
 Building a portfolio is one thing. Ensuring that recruiters and clients actually find it is another. That’s where Search Engine Optimization (SEO) comes into play.
 
-## On-Page SEO
+### On-Page SEO
 Optimize your titles, meta descriptions, and headings with relevant keywords. A well-structured page helps both users and search engines understand your content.
 
-## Content SEO
+### Content SEO
 Publishing blogs on trending topics, case studies, or coding tutorials increases visibility and positions you as an authority in your field.
 
-## Technical SEO
+### Technical SEO
 Ensure your website loads fast, is mobile-friendly, and has clean URLs. Tools like Google Lighthouse can help you audit performance.
 
-## Backlinks & Networking
+### Backlinks & Networking
 Getting your portfolio listed on platforms like GitHub, LinkedIn, and developer forums improves credibility and domain authority.
 
-## Benefits for Developers
+### Benefits for Developers
 With strong SEO, recruiters and clients can find you directly through Google searches — giving you an edge in a competitive job market.
 
-## Conclusion:  
+### Conclusion:  
 SEO isn’t just for businesses. It’s a career booster for developers. A well-optimized portfolio website opens doors to new opportunities.
     `,
   },
