@@ -9,7 +9,7 @@ import MetaHead from "@/components/MetaHead";
 export default function BlogList() {
   return (
     <>
-      <MetaHead page="portfolio" />
+      <MetaHead page="articles" />
       <Banner data={bannerData.article} />
       <Container className="my-5">
         <Row className="g-4">
