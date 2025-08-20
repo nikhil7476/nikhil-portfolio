@@ -22,7 +22,7 @@ export default function BlogSingle() {
   }
 
   // Your site base URL
-  const baseUrl = "https://mishraji-official-portfolio.vercel.app/";
+  const baseUrl = "https://mishraji-official-portfolio.vercel.app/articles/";
   const canonicalUrl = `${baseUrl}${article.slug}`;
 
   return (
