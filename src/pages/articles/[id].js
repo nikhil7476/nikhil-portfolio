@@ -21,24 +21,22 @@ export default function BlogSingle() {
     );
   }
 
+  // Your site base URL
+  const baseUrl = "https://mishraji-official-portfolio.vercel.app/";
+  const canonicalUrl = `${baseUrl}${article.slug}`;
+
   return (
     <>
       <Head>
         <title>{article.metaTitle}</title>
         <meta name="description" content={article.metaDescription} />
         <meta name="keywords" content={article.keywords.join(", ")} />
-        <link
-          rel="canonical"
-          href={`http://localhost:3000/articles${article.slug}`}
-        />
+        <link rel="canonical" href={canonicalUrl} />
         <meta property="og:title" content={article.metaTitle} />
         <meta property="og:description" content={article.metaDescription} />
         <meta property="og:image" content={article.featuredImage} />
         <meta property="og:type" content="website" />
-        <meta
-          property="og:url"
-          content={`http://localhost:3000/articles${article.slug}`}
-        />
+        <meta property="og:url" content={canonicalUrl} />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content={article.metaTitle} />
         <meta name="twitter:description" content={article.metaDescription} />
