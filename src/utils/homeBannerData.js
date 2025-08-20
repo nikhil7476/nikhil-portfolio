@@ -7,7 +7,7 @@ const homeBannerData = [
     title: "Full-Stack Development",
     description:
       "Building scalable and modern web applications with React, Next.js, and MongoDB.",
-    bgImage: "/slide-1.jpg",
+    bgImage: "/website-assets/slide-1.jpg",
     icon: <FaLaptopCode size={40} />,
   },
   {
@@ -15,7 +15,7 @@ const homeBannerData = [
     title: "Creative & Innovative Ideas",
     description:
       "Transforming ideas into reality with clean code, responsive UI, and seamless user experience.",
-    bgImage: "/slide-2.jpg",
+    bgImage: "/website-assets/slide-2.jpg",
     icon: <FaLightbulb size={40} />,
   },
   {
@@ -23,7 +23,7 @@ const homeBannerData = [
     title: "Portfolio of Projects",
     description:
       "Explore my latest projects, case studies, and open-source contributions.",
-    bgImage: "/slide-3.jpg",
+    bgImage: "/website-assets/slide-3.jpg",
     icon: <FaProjectDiagram size={40} />,
   },
 ];

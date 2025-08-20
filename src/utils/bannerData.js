@@ -1,13 +1,8 @@
 // utils/bannerData.js
 const bannerData = {
-  home: {
-    heading: "Welcome to My Portfolio",
-    bgImage: "/nikhil-logo.jpeg",
-    breadcrumb: [{ label: "Home", href: "/" }],
-  },
   about: {
     heading: "About Me",
-    bgImage: "/nikhil-logo.jpeg",
+    bgImage: "/website-assets/about-banner.jpg",
     breadcrumb: [
       { label: "Home", href: "/" },
       { label: "About Me", href: "/about-me" },
@@ -15,7 +10,7 @@ const bannerData = {
   },
   article: {
     heading: "Latest News & Articles",
-    bgImage: "/nikhil-logo.jpeg",
+    bgImage: "/article-assets/article-banner.jpg",
     breadcrumb: [
       { label: "Home", href: "/" },
       { label: "Articles", href: "/articles" },
@@ -23,7 +18,7 @@ const bannerData = {
   },
   service: {
     heading: "Latest News & Articles",
-    bgImage: "/nikhil-logo.jpeg",
+    bgImage: "/service-assets/services-banner.jpg",
     breadcrumb: [
       { label: "Home", href: "/" },
       { label: "Services", href: "/services" },
@@ -31,7 +26,7 @@ const bannerData = {
   },
   portfolio: {
     heading: "Latest News & Articles",
-    bgImage: "/nikhil-logo.jpeg",
+    bgImage: "/portfolio-assets/portfolio-banner.jpg",
     breadcrumb: [
       { label: "Home", href: "/" },
       { label: "Portfolio", href: "/portfolio" },
@@ -39,7 +34,7 @@ const bannerData = {
   },
   tool: {
     heading: "Latest News & Articles",
-    bgImage: "/nikhil-logo.jpeg",
+    bgImage: "/tool-assets/tools-banner.jpg",
     breadcrumb: [
       { label: "Home", href: "/" },
       { label: "Tools", href: "/tools" },
@@ -47,7 +42,7 @@ const bannerData = {
   },
   contact: {
     heading: "Latest News & Articles",
-    bgImage: "/nikhil-logo.jpeg",
+    bgImage: "/website-assets/contact-banner.jpg",
     breadcrumb: [
       { label: "Home", href: "/" },
       { label: "Contact Us", href: "/contact-us" },
