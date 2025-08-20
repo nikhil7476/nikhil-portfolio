@@ -1,7 +1,13 @@
 import React from "react";
+import MetaHead from "@/components/MetaHead";
 
-function ContactMe() {
-  return <div>Contact Me</div>;
+function Contact() {
+  return (
+    <>
+      <MetaHead page="contact" />
+      <div>Contact</div>
+    </>
+  );
 }
 
-export default ContactMe;
+export default Contact;

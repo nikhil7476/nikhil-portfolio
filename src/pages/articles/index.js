@@ -1,14 +1,15 @@
-// pages/blog/index.js
 import Link from "next/link";
 import { Container, Row, Col, Card, Button } from "react-bootstrap";
 import { FaArrowRight } from "react-icons/fa";
 import articlesData from "@/utils/articlesData";
 import Banner from "@/components/Banner";
 import bannerData from "@/utils/bannerData";
+import MetaHead from "@/components/MetaHead";
 
 export default function BlogList() {
   return (
     <>
+      <MetaHead page="portfolio" />
       <Banner data={bannerData.article} />
       <Container className="my-5">
         <h1 className="text-center mb-4 fw-bold">Latest Articles</h1>

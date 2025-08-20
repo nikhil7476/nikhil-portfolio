@@ -8,7 +8,7 @@ const Header = () => {
       <Container>
         {/* Brand / Logo */}
         <Navbar.Brand as={Link} href="/" className="fw-bold">
-          MyPortfolio
+          Nikhil Mishra
         </Navbar.Brand>
 
         {/* Toggle for Mobile */}
@@ -20,53 +20,59 @@ const Header = () => {
             <Nav.Link as={Link} href="/" className="mx-2">
               Home
             </Nav.Link>
-            <Nav.Link as={Link} href="/about" className="mx-2">
-              About
+            <Nav.Link as={Link} href="/about-me" className="mx-2">
+              About Me
             </Nav.Link>
-            <Nav.Link as={Link} href="/projects" className="mx-2">
-              Projects
+            <Nav.Link as={Link} href="/services" className="mx-2">
+              Services
             </Nav.Link>
-            <Nav.Link as={Link} href="/blog" className="mx-2">
-              Blog
+            <Nav.Link as={Link} href="/portfolio" className="mx-2">
+              Portfolio
             </Nav.Link>
-            <Nav.Link as={Link} href="/contact" className="mx-2">
-              Contact
+            <Nav.Link as={Link} href="/tools" className="mx-2">
+              Tools
+            </Nav.Link>
+            <Nav.Link as={Link} href="/articles" className="mx-2">
+              Articles
+            </Nav.Link>
+            <Nav.Link as={Link} href="/contact-me" className="mx-2">
+              Contact Me
             </Nav.Link>
 
             {/* Social Icons */}
             <div className="d-flex ms-lg-3">
-              <a
+              <Link
                 href="https://facebook.com"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-light mx-2"
               >
                 <FaFacebookF />
-              </a>
-              <a
+              </Link>
+              <Link
                 href="https://twitter.com"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-light mx-2"
               >
                 <FaTwitter />
-              </a>
-              <a
+              </Link>
+              <Link
                 href="https://linkedin.com"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-light mx-2"
               >
                 <FaLinkedinIn />
-              </a>
-              <a
+              </Link>
+              <Link
                 href="https://github.com"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-light mx-2"
               >
                 <FaGithub />
-              </a>
+              </Link>
             </div>
           </Nav>
         </Navbar.Collapse>
