@@ -7,7 +7,7 @@ const Header = () => {
     <Navbar bg="dark" variant="dark" expand="lg" sticky="top">
       <Container>
         {/* Brand / Logo */}
-        <Navbar.Brand as={Link} href="/" className="fw-bold">
+        <Navbar.Brand as={Link} href="/" className="text-light fw-bold">
           Nikhil Mishra
         </Navbar.Brand>
 
@@ -17,25 +17,25 @@ const Header = () => {
         {/* Navbar Links */}
         <Navbar.Collapse id="main-navbar">
           <Nav className="ms-auto align-items-lg-center">
-            <Nav.Link as={Link} href="/" className="mx-2">
+            <Nav.Link as={Link} href="/" className="text-light mx-2">
               Home
             </Nav.Link>
-            <Nav.Link as={Link} href="/about-me" className="mx-2">
+            <Nav.Link as={Link} href="/about-me" className="text-light mx-2">
               About Me
             </Nav.Link>
-            <Nav.Link as={Link} href="/services" className="mx-2">
+            <Nav.Link as={Link} href="/services" className="text-light mx-2">
               Services
             </Nav.Link>
-            <Nav.Link as={Link} href="/portfolio" className="mx-2">
+            <Nav.Link as={Link} href="/portfolio" className="text-light mx-2">
               Portfolio
             </Nav.Link>
-            <Nav.Link as={Link} href="/tools" className="mx-2">
+            <Nav.Link as={Link} href="/tools" className="text-light mx-2">
               Tools
             </Nav.Link>
-            <Nav.Link as={Link} href="/articles" className="mx-2">
+            <Nav.Link as={Link} href="/articles" className="text-light mx-2">
               Articles
             </Nav.Link>
-            <Nav.Link as={Link} href="/contact-me" className="mx-2">
+            <Nav.Link as={Link} href="/contact-me" className="text-light mx-2">
               Contact Me
             </Nav.Link>
 

@@ -35,9 +35,6 @@ const MetaHead = ({ page }) => {
       <meta name="twitter:title" content={metaTitle} />
       <meta name="twitter:description" content={metaDescription} />
       <meta name="twitter:image" content={`${baseUrl}${ogImage}`} />
-
-      {/* Favicon */}
-      <link rel="icon" href="/favicon.ico" />
     </Head>
   );
 };
