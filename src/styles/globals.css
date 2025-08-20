@@ -64,27 +64,31 @@ h6 {
 }
 
 h1 {
-  font-size: 36px;
+  font-size: 36px !important;
 }
 
 h2 {
-  font-size: 32px;
+  font-size: 30px !important;
 }
 
 h3 {
-  font-size: 28px;
+  font-size: 25px !important;
 }
 
 h4 {
-  font-size: 24px;
+  font-size: 20px !important;
 }
 
 h5 {
-  font-size: 20px;
+  font-size: 18px !important;
 }
 
 h6 {
-  font-size: 18px;
+  font-size: 16px !important;
+}
+
+ul li {
+  font-size: 16px;
 }
 
 span {
@@ -140,11 +144,11 @@ textarea:focus {
   }
 
   h1 {
-    font-size: 24px;
+    font-size: 30px;
   }
 
   h2 {
-    font-size: 20px;
+    font-size: 25px;
   }
 
   h3 {
@@ -152,7 +156,7 @@ textarea:focus {
   }
 
   p {
-    font-size: 14px;
+    font-size: 16px;
   }
 }
 
@@ -161,16 +165,16 @@ textarea:focus {
     font-size: 16px;
   }
   h1 {
-    font-size: 20px;
+    font-size: 30px;
   }
   h2 {
-    font-size: 18px;
+    font-size: 20px;
   }
   h3 {
-    font-size: 16px;
+    font-size: 18px;
   }
   p {
-    font-size: 12px;
+    font-size: 16px;
   }
 }
 
@@ -179,15 +183,15 @@ textarea:focus {
     font-size: 16px;
   }
   h1 {
-    font-size: 18px;
+    font-size: 25px;
   }
   h2 {
-    font-size: 16px;
+    font-size: 18px;
   }
   h3 {
-    font-size: 14px;
+    font-size: 16px;
   }
   p {
-    font-size: 10px;
+    font-size: 14px;
   }
 }

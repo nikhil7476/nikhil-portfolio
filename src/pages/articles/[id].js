@@ -98,6 +98,7 @@ export default function BlogSingle() {
         <Image
           src={article.featuredImage}
           alt={article.title}
+          title={article.title}
           fluid
           rounded
           className="mb-4"

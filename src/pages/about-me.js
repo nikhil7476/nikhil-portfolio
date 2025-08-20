@@ -1,7 +1,11 @@
-import React from "react";
+import FaqAccordion from "@/components/FaqAccordion";
+import accordionData from "@/utils/accordionData";
 
-function AboutMe() {
-  return <div>About Me</div>;
+export default function About() {
+  return (
+    <div className="container py-5">
+      <h2 className="mb-4">About Me</h2>
+      <FaqAccordion data={accordionData.about} />
+    </div>
+  );
 }
-
-export default AboutMe;
