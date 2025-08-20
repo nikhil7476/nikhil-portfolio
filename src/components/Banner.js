@@ -1,5 +1,5 @@
 // components/Banner.js
-"use client";
+
 import { Container } from "react-bootstrap";
 import Breadcrumbs from "./Breadcrumbs";
 

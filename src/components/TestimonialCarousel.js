@@ -1,4 +1,5 @@
-"use client";
+// components/TestimonialCarousel.js
+
 import { Carousel } from "react-bootstrap";
 import { FaQuoteLeft } from "react-icons/fa";
 

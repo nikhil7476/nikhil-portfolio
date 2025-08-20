@@ -1,4 +1,5 @@
-"use client"; // for Next.js App Router
+// components/FaqAccordion.js
+
 import { Accordion } from "react-bootstrap";
 import { FaPlus, FaMinus } from "react-icons/fa";
 import { useState } from "react";

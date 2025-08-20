@@ -1,5 +1,5 @@
 // components/Breadcrumbs.js
-"use client";
+
 import Link from "next/link";
 import { Breadcrumb } from "react-bootstrap";
 import { FaHome } from "react-icons/fa";
