@@ -6,8 +6,8 @@ import bannerData from "@/utils/bannerData";
 function Portfolio() {
   return (
     <>
-      <Banner data={bannerData.portfolio} />
       <MetaHead page="portfolio" />
+      <Banner data={bannerData.portfolio} />
       <div>Portfolio</div>
     </>
   );

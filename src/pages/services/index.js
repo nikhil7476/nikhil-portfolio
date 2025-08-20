@@ -7,7 +7,7 @@ import bannerData from "@/utils/bannerData";
 export default function Services() {
   return (
     <>
-      <MetaHead page="about" />
+      <MetaHead page="services" />
       <Banner data={bannerData.service} />
       <div className="container py-5">
         <h2 className="mb-4 text-center">Client Feedback</h2>
