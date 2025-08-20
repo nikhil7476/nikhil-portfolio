@@ -11,7 +11,7 @@ const Banner = ({ data }) => {
         backgroundImage: `url(${data.bgImage})`,
         backgroundSize: "cover",
         backgroundPosition: "center",
-        minHeight: "250px",
+        minHeight: "450px",
       }}
     >
       <Container>
