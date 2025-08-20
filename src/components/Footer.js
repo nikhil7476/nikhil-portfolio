@@ -10,6 +10,7 @@ import {
   FaPhoneAlt,
   FaTwitter,
 } from "react-icons/fa";
+import NewsletterForm from "./NewsletterForm";
 
 function Footer() {
   return (
@@ -30,7 +31,7 @@ function Footer() {
               </Link>
             </Col>
             <Col xl={3} lg={3} md={6} sm={12} xs={12}>
-              <h2>Contact</h2>
+              <h3>Contact</h3>
               <p>5919 Trussville Crossings Pkwy, Birmingham</p>
               <ul className="list-unstyled">
                 <li className="mb-2">
@@ -54,7 +55,7 @@ function Footer() {
               </ul>
             </Col>
             <Col xl={3} lg={3} md={6} sm={12} xs={12}>
-              <h2>Useful Links</h2>
+              <h3>Useful Links</h3>
               <ul className="list-unstyled">
                 <li className="mb-2">
                   <Link
@@ -104,7 +105,7 @@ function Footer() {
               </ul>
             </Col>
             <Col xl={3} lg={3} md={6} sm={12} xs={12}>
-              <h2>Follow Me</h2>
+              <h3>Follow Me</h3>
               <ul className="list-unstyled d-flex gap-3">
                 <li className="mb-2">
                   <Link
@@ -147,18 +148,20 @@ function Footer() {
                   </Link>
                 </li>
               </ul>
+              <h3>Subscribe</h3>
+              <NewsletterForm />
             </Col>
           </Row>
-          <Row className="my-3">
+          <Row className="my-3 bg-light rounded py-2">
             <Col
               xl={12}
               lg={12}
               md={12}
               sm={12}
               xs={12}
-              className="text-center"
+              className="align-content-center"
             >
-              <p>
+              <p className="text-center text-muted m-0">
                 &copy;{new Date().getFullYear()} Portfolio is Proudly Designed &
                 Developed by{" "}
                 <Link

@@ -1,23 +1,17 @@
 // utils/bannerData.js
 const bannerData = {
   about: {
-    heading: "About Me",
+    subHeading: "Who I Am",
+    heading: "Discover My Journey",
     bgImage: "/website-assets/about-banner.jpg",
     breadcrumb: [
       { label: "Home", href: "/" },
       { label: "About Me", href: "/about-me" },
     ],
   },
-  article: {
-    heading: "Latest News & Articles",
-    bgImage: "/article-assets/article-banner.jpg",
-    breadcrumb: [
-      { label: "Home", href: "/" },
-      { label: "Articles", href: "/articles" },
-    ],
-  },
   service: {
-    heading: "Latest News & Articles",
+    subHeading: "What I Do",
+    heading: "Crafting Digital Experiences",
     bgImage: "/service-assets/services-banner.jpg",
     breadcrumb: [
       { label: "Home", href: "/" },
@@ -25,7 +19,8 @@ const bannerData = {
     ],
   },
   portfolio: {
-    heading: "Latest News & Articles",
+    subHeading: "My Work",
+    heading: "Showcasing Creativity & Impact",
     bgImage: "/portfolio-assets/portfolio-banner.jpg",
     breadcrumb: [
       { label: "Home", href: "/" },
@@ -33,15 +28,26 @@ const bannerData = {
     ],
   },
   tool: {
-    heading: "Latest News & Articles",
+    subHeading: "Tech Stack",
+    heading: "Powering Ideas with Innovation",
     bgImage: "/tool-assets/tools-banner.jpg",
     breadcrumb: [
       { label: "Home", href: "/" },
       { label: "Tools", href: "/tools" },
     ],
   },
+  article: {
+    subHeading: "My Words",
+    heading: "Insights, Stories & Knowledge",
+    bgImage: "/article-assets/article-banner.jpg",
+    breadcrumb: [
+      { label: "Home", href: "/" },
+      { label: "Articles", href: "/articles" },
+    ],
+  },
   contact: {
-    heading: "Latest News & Articles",
+    subHeading: "Let’s Talk",
+    heading: "Start a Conversation Today",
     bgImage: "/website-assets/contact-banner.jpg",
     breadcrumb: [
       { label: "Home", href: "/" },

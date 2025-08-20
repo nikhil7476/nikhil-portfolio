@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { Form, Button, InputGroup } from "react-bootstrap";
-import { FaEnvelope } from "react-icons/fa";
+import { HiPaperAirplane } from "react-icons/hi2";
 
 const NewsletterForm = () => {
   const [email, setEmail] = useState("");
@@ -14,25 +14,18 @@ const NewsletterForm = () => {
   };
 
   return (
-    <div className="newsletter-box p-4 rounded">
-      <h5 className="fw-bold mb-3">Subscribe to Our Newsletter</h5>
-      <p className="small text-muted">
-        Get the latest updates, blogs, and projects delivered to your inbox.
-      </p>
+    <div className="newsletter-box">
       <Form onSubmit={handleSubmit}>
         <InputGroup>
-          <InputGroup.Text>
-            <FaEnvelope />
-          </InputGroup.Text>
           <Form.Control
             type="email"
-            placeholder="Enter your email"
+            placeholder="Enter Your Email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             required
           />
           <Button type="submit" variant="primary">
-            Subscribe
+            <HiPaperAirplane />
           </Button>
         </InputGroup>
       </Form>

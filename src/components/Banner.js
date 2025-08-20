@@ -15,6 +15,7 @@ const Banner = ({ data }) => {
       }}
     >
       <Container>
+        <span>{data.subHeading}</span>
         <h1 className="fw-bold">{data.heading}</h1>
         <Breadcrumbs items={data.breadcrumb} />
       </Container>

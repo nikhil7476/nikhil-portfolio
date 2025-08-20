@@ -62,7 +62,7 @@ export default function BlogSingle() {
       <section>
         <Container className="py-5">
           <h2 className="fw-bold mb-3">{article.title}</h2>
-          <p className="text-muted d-flex align-items-center gap-2 mb-4">
+          <p className="d-flex align-items-center gap-2 mb-4">
             <FaCalendarAlt /> Published in 2025
           </p>
 

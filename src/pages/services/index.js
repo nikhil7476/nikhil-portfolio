@@ -1,16 +1,18 @@
-import React from "react";
-import MetaHead from "@/components/MetaHead";
 import TestimonialCarousel from "@/components/TestimonialCarousel";
 import testimonialData from "@/utils/testimonialData";
+import MetaHead from "@/components/MetaHead";
+import Banner from "@/components/Banner";
+import bannerData from "@/utils/bannerData";
 
-function Services() {
+export default function Services() {
   return (
     <>
-      <MetaHead page="services" />
-      <div>Services</div>
-      <TestimonialCarousel data={testimonialData.services} />
+      <MetaHead page="about" />
+      <Banner data={bannerData.service} />
+      <div className="container py-5">
+        <h2 className="mb-4 text-center">Client Feedback</h2>
+        <TestimonialCarousel data={testimonialData.services} />
+      </div>
     </>
   );
 }
-
-export default Services;

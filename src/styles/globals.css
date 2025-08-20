@@ -1,8 +1,8 @@
 /* ===== Root Theme Variables ===== */
 :root {
-  --primary: #ea552b;
-  --secondary: #010101;
-  --accent: #ea552b;
+  --primary: #e96429;
+  --secondary: #0c0a0a;
+  --accent: #e96429;
 
   --border: #eaeaea;
   --shadow: rgba(0, 0, 0, 0.1);
@@ -11,50 +11,26 @@
   --font-body: "Sora", "Poppins", sans-serif;
 }
 
-/* ===== Light Theme ===== */
-:root[data-theme="light"] {
-  --background: #e5ecf7;
-  --foreground: #010101;
-
-  --heading: #010101;
-  --text: #444;
-  --muted-text: #6c757d;
-
-  --link: #010101;
-  --link-hover: #ea552b;
-
-  --button-bg: #010101;
-  --button-text: #ffffff;
-  --button-hover-bg: #ea552b;
-  --button-hover-text: #ffffff;
-
-  --input-bg: #f5f5f5;
-  --input-border: #dcdcdc;
-  --input-focus-bg: #ffffff;
-  --input-focus-border: #ea552b;
-}
-
-/* ===== Dark Theme ===== */
-:root[data-theme="dark"] {
-  --background: #0d0d0d;
-  --foreground: #f5f5f5;
+:root {
+  --background: #0c0a0a;
+  --foreground: #ecf6ed;
 
   --heading: #ffffff;
-  --text: #c6c8c9;
+  --text: #b3b3b3;
   --muted-text: #9a9a9a;
 
-  --link: #ea552b;
-  --link-hover: #ffffff;
+  --link: #b3b3b3;
+  --link-hover: #e96429;
 
-  --button-bg: #ea552b;
+  --button-bg: #e96429;
   --button-text: #ffffff;
   --button-hover-bg: #ffffff;
-  --button-hover-text: #010101;
+  --button-hover-text: #0c0a0a;
 
-  --input-bg: #1a1a1a;
-  --input-border: #333;
-  --input-focus-bg: #101010;
-  --input-focus-border: #ea552b;
+  --input-bg: #ffffff;
+  --input-border: #b3b3b3;
+  --input-focus-bg: #ffffff;
+  --input-focus-border: #b3b3b3;
 }
 
 /* ===== Base Styles ===== */
@@ -62,9 +38,9 @@ html,
 body {
   max-width: 100vw;
   overflow-x: hidden;
-  background: var(--background);
-  color: var(--foreground);
-  font-family: var(--font-body);
+  background: var(--background) !important;
+  color: var(--foreground) !important;
+  font-family: var(--font-body) !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   transition: background 0.3s ease, color 0.3s ease;
@@ -77,12 +53,12 @@ body {
 }
 
 a {
-  color: var(--link);
-  text-decoration: none;
+  color: var(--link) !important;
+  text-decoration: none !important;
   transition: color 0.3s ease;
 }
 a:hover {
-  color: var(--link-hover);
+  color: var(--link-hover) !important;
 }
 
 h1,
@@ -91,34 +67,35 @@ h3,
 h4,
 h5,
 h6 {
-  color: var(--heading);
+  color: var(--heading) !important;
   font-weight: 600;
   line-height: 1.2em;
-  font-family: var(--font-heading);
+  font-family: var(--font-heading) !important;
 }
 
 h1 {
-  font-size: 36px;
+  font-size: 36px !important;
 }
 h2 {
-  font-size: 30px;
+  font-size: 30px !important;
 }
 h3 {
-  font-size: 25px;
+  font-size: 25px !important;
 }
 h4 {
-  font-size: 20px;
+  font-size: 20px !important;
 }
 h5 {
-  font-size: 18px;
+  font-size: 18px !important;
 }
 h6 {
-  font-size: 16px;
+  font-size: 16px !important;
 }
 
 p {
   color: var(--text);
-  font-size: 16px;
+  font-size: 16px !important;
+  text-align: justify;
   font-weight: 400;
   line-height: 1.6em;
 }
@@ -126,7 +103,7 @@ p {
 span {
   color: var(--accent);
   text-transform: uppercase;
-  font-size: 14px;
+  font-size: 14px !important;
   font-weight: 500;
   letter-spacing: 2px;
   line-height: 1.2em;
@@ -134,6 +111,12 @@ span {
 
 ul li {
   font-size: 16px;
+  color: var(--text);
+}
+
+.breadcrumb-item.active,
+.breadcrumb-item:before {
+  color: var(--text) !important;
 }
 
 /* ===== Buttons ===== */
@@ -147,9 +130,26 @@ button {
   border-radius: 6px;
   transition: all 0.3s ease;
 }
+
 button:hover {
   background: var(--button-hover-bg);
   color: var(--button-hover-text);
+}
+
+.ctaButton {
+  background: var(--button-bg);
+  color: var(--button-text) !important;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+
+.ctaButton:hover {
+  background: var(--button-hover-bg);
+  color: var(--button-hover-text) !important;
 }
 
 /* ===== Inputs ===== */
@@ -172,42 +172,42 @@ textarea:focus {
 /* ===== Responsive Typography ===== */
 @media (max-width: 768px) {
   h1 {
-    font-size: 30px;
+    font-size: 30px !important;
   }
   h2 {
-    font-size: 25px;
+    font-size: 25px !important;
   }
   h3 {
-    font-size: 20px;
+    font-size: 20px !important;
   }
 }
 
 @media (max-width: 480px) {
   h1 {
-    font-size: 26px;
+    font-size: 26px !important;
   }
   h2 {
-    font-size: 20px;
+    font-size: 20px !important;
   }
   h3 {
-    font-size: 18px;
+    font-size: 18px !important;
   }
   p {
-    font-size: 15px;
+    font-size: 15px !important;
   }
 }
 
 @media (max-width: 320px) {
   h1 {
-    font-size: 22px;
+    font-size: 22px !important;
   }
   h2 {
-    font-size: 18px;
+    font-size: 18px !important;
   }
   h3 {
-    font-size: 16px;
+    font-size: 16px !important;
   }
   p {
-    font-size: 14px;
+    font-size: 14px !important;
   }
 }
