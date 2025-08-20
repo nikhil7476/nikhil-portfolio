@@ -1,55 +1,88 @@
+/* ===== Root Theme Variables ===== */
 :root {
-  --background: #e5ecf7;
-  --foreground: #010101;
-  --headinglight: #ffffff;
-  --headingdark: #010101;
-  --textlight: #c6c8c9;
-  --textdark: #010101;
   --primary: #ea552b;
   --secondary: #010101;
   --accent: #ea552b;
+
   --border: #eaeaea;
   --shadow: rgba(0, 0, 0, 0.1);
-  --linklight: #010101;
-  --linkdark: #ea552b;
+
+  --font-heading: "Sora", "Poppins", sans-serif;
+  --font-body: "Sora", "Poppins", sans-serif;
+}
+
+/* ===== Light Theme ===== */
+:root[data-theme="light"] {
+  --background: #e5ecf7;
+  --foreground: #010101;
+
+  --heading: #010101;
+  --text: #444;
+  --muted-text: #6c757d;
+
+  --link: #010101;
   --link-hover: #ea552b;
+
   --button-bg: #010101;
   --button-text: #ffffff;
   --button-hover-bg: #ea552b;
   --button-hover-text: #ffffff;
+
   --input-bg: #f5f5f5;
   --input-border: #dcdcdc;
   --input-focus-bg: #ffffff;
   --input-focus-border: #ea552b;
 }
 
+/* ===== Dark Theme ===== */
+:root[data-theme="dark"] {
+  --background: #0d0d0d;
+  --foreground: #f5f5f5;
+
+  --heading: #ffffff;
+  --text: #c6c8c9;
+  --muted-text: #9a9a9a;
+
+  --link: #ea552b;
+  --link-hover: #ffffff;
+
+  --button-bg: #ea552b;
+  --button-text: #ffffff;
+  --button-hover-bg: #ffffff;
+  --button-hover-text: #010101;
+
+  --input-bg: #1a1a1a;
+  --input-border: #333;
+  --input-focus-bg: #101010;
+  --input-focus-border: #ea552b;
+}
+
+/* ===== Base Styles ===== */
 html,
 body {
   max-width: 100vw;
   overflow-x: hidden;
-}
-
-body {
-  color: var(--foreground) !important;
-  background: var(--background) !important;
-  font-family: "Sora", "Poppins", sans-serif !important;
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-body);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  transition: background 0.3s ease, color 0.3s ease;
 }
 
 * {
   box-sizing: border-box;
-  padding: 0;
   margin: 0;
+  padding: 0;
 }
 
 a {
-  color: var(--linklight) !important;
+  color: var(--link);
   text-decoration: none;
+  transition: color 0.3s ease;
 }
-
 a:hover {
-  color: var(--link-hover) !important;
+  color: var(--link-hover);
 }
 
 h1,
@@ -58,37 +91,36 @@ h3,
 h4,
 h5,
 h6 {
-  color: var(--headingdark);
+  color: var(--heading);
   font-weight: 600;
   line-height: 1.2em;
+  font-family: var(--font-heading);
 }
 
 h1 {
-  font-size: 36px !important;
+  font-size: 36px;
 }
-
 h2 {
-  font-size: 30px !important;
+  font-size: 30px;
 }
-
 h3 {
-  font-size: 25px !important;
+  font-size: 25px;
 }
-
 h4 {
-  font-size: 20px !important;
+  font-size: 20px;
 }
-
 h5 {
-  font-size: 18px !important;
+  font-size: 18px;
 }
-
 h6 {
-  font-size: 16px !important;
+  font-size: 16px;
 }
 
-ul li {
+p {
+  color: var(--text);
   font-size: 16px;
+  font-weight: 400;
+  line-height: 1.6em;
 }
 
 span {
@@ -100,35 +132,36 @@ span {
   line-height: 1.2em;
 }
 
-p {
-  color: var(--textdark);
+ul li {
   font-size: 16px;
-  font-weight: 400;
-  line-height: 1.5em;
 }
 
+/* ===== Buttons ===== */
 button {
-  background: var(--button-bg) !important;
+  background: var(--button-bg);
   color: var(--button-text);
-  border: none !important;
+  border: none;
   padding: 10px 20px;
   cursor: pointer;
   font-size: 16px;
+  border-radius: 6px;
+  transition: all 0.3s ease;
 }
-
 button:hover {
-  background: var(--button-hover-bg) !important;
+  background: var(--button-hover-bg);
   color: var(--button-hover-text);
 }
 
+/* ===== Inputs ===== */
 input,
 textarea {
   background: var(--input-bg);
   border: 1px solid var(--input-border);
   padding: 10px;
   font-size: 16px;
+  border-radius: 4px;
+  transition: border-color 0.3s ease, background 0.3s ease;
 }
-
 input:focus,
 textarea:focus {
   background: var(--input-focus-bg);
@@ -136,36 +169,22 @@ textarea:focus {
   outline: none;
 }
 
-/*Responsive Styles*/
-
+/* ===== Responsive Typography ===== */
 @media (max-width: 768px) {
-  body {
-    font-size: 16px;
-  }
-
   h1 {
     font-size: 30px;
   }
-
   h2 {
     font-size: 25px;
   }
-
   h3 {
-    font-size: 18px;
-  }
-
-  p {
-    font-size: 16px;
+    font-size: 20px;
   }
 }
 
 @media (max-width: 480px) {
-  body {
-    font-size: 16px;
-  }
   h1 {
-    font-size: 30px;
+    font-size: 26px;
   }
   h2 {
     font-size: 20px;
@@ -174,16 +193,13 @@ textarea:focus {
     font-size: 18px;
   }
   p {
-    font-size: 16px;
+    font-size: 15px;
   }
 }
 
 @media (max-width: 320px) {
-  body {
-    font-size: 16px;
-  }
   h1 {
-    font-size: 25px;
+    font-size: 22px;
   }
   h2 {
     font-size: 18px;
