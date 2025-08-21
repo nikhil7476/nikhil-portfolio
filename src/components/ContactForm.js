@@ -23,8 +23,7 @@ const ContactForm = () => {
   };
 
   return (
-    <div className="contact-form p-4 rounded shadow-sm bg-light">
-      <h4 className="fw-bold mb-4">Get in Touch</h4>
+    <div className="p-4">
       <Form onSubmit={handleSubmit}>
         <Form.Group className="mb-3">
           <Form.Label>

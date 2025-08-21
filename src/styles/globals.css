@@ -24,8 +24,10 @@
 
   --button-bg: #e96429;
   --button-text: #ffffff;
+  --button-border: #e96429;
   --button-hover-bg: #ffffff;
   --button-hover-text: #0c0a0a;
+  --button-hover-border: #ffffff;
 
   --input-bg: #ffffff;
   --input-border: #b3b3b3;
@@ -121,9 +123,9 @@ ul li {
 
 /* ===== Buttons ===== */
 button {
-  background: var(--button-bg);
-  color: var(--button-text);
-  border: none;
+  background: var(--button-bg) !important;
+  color: var(--button-text) !important;
+  border: 1px solid var(--button-border) !important;
   padding: 10px 20px;
   cursor: pointer;
   font-size: 16px;
@@ -132,14 +134,15 @@ button {
 }
 
 button:hover {
-  background: var(--button-hover-bg);
-  color: var(--button-hover-text);
+  background: var(--button-hover-bg) !important;
+  color: var(--button-hover-text) !important;
+  border: 1px solid var(--button-hover-border) !important;
 }
 
 .ctaButton {
   background: var(--button-bg);
   color: var(--button-text) !important;
-  border: none;
+  border: 1px solid var(--button-border) !important;
   padding: 10px 20px;
   cursor: pointer;
   font-size: 16px;
@@ -148,25 +151,29 @@ button:hover {
 }
 
 .ctaButton:hover {
-  background: var(--button-hover-bg);
+  background: var(--button-hover-bg) !important;
   color: var(--button-hover-text) !important;
+  border: 1px solid var(--button-hover-border) !important;
 }
 
 /* ===== Inputs ===== */
 input,
 textarea {
-  background: var(--input-bg);
-  border: 1px solid var(--input-border);
+  background: var(--input-bg) !important;
+  border: 1px solid var(--input-border) !important;
   padding: 10px;
   font-size: 16px;
   border-radius: 4px;
   transition: border-color 0.3s ease, background 0.3s ease;
 }
 input:focus,
-textarea:focus {
-  background: var(--input-focus-bg);
-  border: 1px solid var(--input-focus-border);
-  outline: none;
+input:active,
+textarea:focus,
+textarea:active {
+  background: var(--input-focus-bg) !important;
+  border: 1px solid var(--input-focus-border) !important;
+  outline: none !important;
+  box-shadow: none !important;
 }
 
 /* ===== Responsive Typography ===== */
