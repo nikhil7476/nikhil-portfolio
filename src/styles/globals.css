@@ -21,6 +21,7 @@
 
   --divider: #caef45;
   --icon: #caef45;
+  --section: #1c1d20;
 
   --link: #c1c1c1;
   --link-hover: #caef45;
@@ -139,6 +140,12 @@ ul li {
 .breadcrumb-item.active,
 .breadcrumb-item:before {
   color: var(--text) !important;
+}
+
+/* ===== Sections ==== */
+
+section:nth-child(even) {
+  background: var(--section) !important;
 }
 
 /* ===== Buttons ===== */
