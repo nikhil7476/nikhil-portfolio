@@ -67,7 +67,7 @@ a:hover {
   color: var(--link-hover) !important;
 }
 
-.container {
+.section {
   padding: 30px 20px;
 }
 
@@ -139,12 +139,6 @@ ul li {
 .breadcrumb-item:before {
   color: var(--text) !important;
 }
-
-/* ===== Sections ==== */
-
-/* section:nth-child(even) {
-  background: var(--section) !important;
-} */
 
 /* ===== Buttons ===== */
 button {
