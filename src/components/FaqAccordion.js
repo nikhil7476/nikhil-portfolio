@@ -12,27 +12,27 @@ const FaqAccordion = ({ data }) => {
   };
 
   return (
-    <Accordion activeKey={activeKey}>
-      {data.map((item, index) => (
-        <Accordion.Item
-          eventKey={index.toString()}
-          key={item.id || index}
-          className="mb-2"
-        >
-          <Accordion.Header onClick={() => handleToggle(index.toString())}>
-            <span className="flex items-center gap-2">
-              {activeKey === index.toString() ? (
-                <FaMinus className="text-primary" />
+    <>
+      <Accordion activeKey={activeKey} flush>
+        {data.map((item, index) => (
+          <Accordion.Item
+            eventKey={index}
+            key={item.id || index}
+            className="mb-3"
+          >
+            <Accordion.Header onClick={() => handleToggle(index)}>
+              {activeKey === index ? (
+                <FaMinus className="mx-2" />
               ) : (
-                <FaPlus className="text-primary" />
-              )}
+                <FaPlus className="mx-2" />
+              )}{" "}
               {item.title}
-            </span>
-          </Accordion.Header>
-          <Accordion.Body>{item.content}</Accordion.Body>
-        </Accordion.Item>
-      ))}
-    </Accordion>
+            </Accordion.Header>
+            <Accordion.Body>{item.content}</Accordion.Body>
+          </Accordion.Item>
+        ))}
+      </Accordion>
+    </>
   );
 };
 
