@@ -7,8 +7,8 @@
   --border: #eaeaea;
   --shadow: rgba(0, 0, 0, 0.1);
 
-  --font-heading: "Sora", "Poppins", sans-serif;
-  --font-body: "Sora", "Poppins", sans-serif;
+  --font-heading: "Urbanist", "Poppins", sans-serif;
+  --font-body: "Urbanist", "Poppins", sans-serif;
 }
 
 :root {
@@ -20,6 +20,7 @@
   --muted-text: #2c2c2c;
 
   --divider: #caef45;
+  --icon: #caef45;
 
   --link: #c1c1c1;
   --link-hover: #caef45;
@@ -65,6 +66,17 @@ a:hover {
   color: var(--link-hover) !important;
 }
 
+.container {
+  padding: 30px 20px;
+  width: 1300px !important;
+  max-width: 1300px !important;
+}
+
+.row,
+.col {
+  padding: 10px;
+}
+
 h1,
 h2,
 h3,
@@ -72,7 +84,8 @@ h4,
 h5,
 h6 {
   color: var(--heading) !important;
-  font-weight: 600;
+  font-weight: 600 !important;
+  text-transform: capitalize;
   line-height: 1.2em;
   font-family: var(--font-heading) !important;
 }
@@ -104,23 +117,22 @@ hr {
 
 p {
   color: var(--text);
-  font-size: 16px !important;
-  text-align: justify;
-  font-weight: 400;
+  font-size: 18px !important;
+  font-weight: 500 !important;
   line-height: 1.6em;
 }
 
 span {
   color: var(--accent);
   text-transform: uppercase;
-  font-size: 14px !important;
-  font-weight: 500;
-  letter-spacing: 2px;
+  font-size: 16px !important;
+  font-weight: 600 !important;
+  letter-spacing: 1px;
   line-height: 1.2em;
 }
 
 ul li {
-  font-size: 16px;
+  font-size: 18px;
   color: var(--text);
 }
 

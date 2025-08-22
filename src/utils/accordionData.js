@@ -12,6 +12,11 @@ const accordionData = {
       title: "Which technologies are used?",
       content: "I use Next.js, MongoDB, React Bootstrap, and React Icons.",
     },
+    {
+      id: 3,
+      title: "Which technologies are used?",
+      content: "I use Next.js, MongoDB, React Bootstrap, and React Icons.",
+    },
   ],
   about: [
     {
@@ -26,6 +31,12 @@ const accordionData = {
       content:
         "To create scalable, user-friendly applications and keep learning new technologies.",
     },
+    {
+      id: 3,
+      title: "What are my goals?",
+      content:
+        "To create scalable, user-friendly applications and keep learning new technologies.",
+    },
   ],
   services: [
     {
@@ -35,6 +46,62 @@ const accordionData = {
     },
     {
       id: 2,
+      title: "Backend Development",
+      content: "I create secure and scalable REST APIs with Node.js & MongoDB.",
+    },
+    {
+      id: 3,
+      title: "Backend Development",
+      content: "I create secure and scalable REST APIs with Node.js & MongoDB.",
+    },
+  ],
+  portfolio: [
+    {
+      id: 1,
+      title: "Web Development",
+      content: "I build responsive and SEO-friendly web applications.",
+    },
+    {
+      id: 2,
+      title: "Backend Development",
+      content: "I create secure and scalable REST APIs with Node.js & MongoDB.",
+    },
+    {
+      id: 3,
+      title: "Backend Development",
+      content: "I create secure and scalable REST APIs with Node.js & MongoDB.",
+    },
+  ],
+  tools: [
+    {
+      id: 1,
+      title: "Web Development",
+      content: "I build responsive and SEO-friendly web applications.",
+    },
+    {
+      id: 2,
+      title: "Backend Development",
+      content: "I create secure and scalable REST APIs with Node.js & MongoDB.",
+    },
+    {
+      id: 3,
+      title: "Backend Development",
+      content: "I create secure and scalable REST APIs with Node.js & MongoDB.",
+    },
+  ],
+  contact: [
+    {
+      id: 1,
+      title: "Web Development",
+      content: "I build responsive and SEO-friendly web applications.",
+    },
+    {
+      id: 2,
+      title: "Backend Development",
+      content: "I create secure and scalable REST APIs with Node.js & MongoDB.",
+    },
+    {
+      id: 3,
       title: "Backend Development",
       content: "I create secure and scalable REST APIs with Node.js & MongoDB.",
     },

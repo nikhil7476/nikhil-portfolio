@@ -1,8 +1,9 @@
 // components/FaqAccordion.js
 
-import { Accordion } from "react-bootstrap";
+import { Accordion, Col, Container, Row } from "react-bootstrap";
 import { FaPlus, FaMinus } from "react-icons/fa";
 import { useState } from "react";
+import Image from "next/image";
 
 const FaqAccordion = ({ data }) => {
   const [activeKey, setActiveKey] = useState(null);
@@ -13,25 +14,52 @@ const FaqAccordion = ({ data }) => {
 
   return (
     <>
-      <Accordion activeKey={activeKey} flush>
-        {data.map((item, index) => (
-          <Accordion.Item
-            eventKey={index}
-            key={item.id || index}
-            className="mb-3"
+      <Container>
+        <Row>
+          <Col xl={5} lg={5} md={6} sm={12} xs={12}>
+            <Image
+              src="/website-assets/faqs.png"
+              alt="FAQs-Image"
+              title="FAQs"
+              width={350}
+              height={350}
+              style={{ width: "100%", height: "auto" }}
+            />
+          </Col>
+          <Col
+            xl={7}
+            lg={7}
+            md={6}
+            sm={12}
+            xs={12}
+            className="align-content-center"
           >
-            <Accordion.Header onClick={() => handleToggle(index)}>
-              {activeKey === index ? (
-                <FaMinus className="mx-2" />
-              ) : (
-                <FaPlus className="mx-2" />
-              )}{" "}
-              {item.title}
-            </Accordion.Header>
-            <Accordion.Body>{item.content}</Accordion.Body>
-          </Accordion.Item>
-        ))}
-      </Accordion>
+            <span>FAQs</span>
+            <h2>Frequently Asked Questions</h2>
+            <hr />
+
+            <Accordion activeKey={activeKey} flush>
+              {data.map((item, index) => (
+                <Accordion.Item
+                  eventKey={index}
+                  key={item.id || index}
+                  className="mb-3"
+                >
+                  <Accordion.Header onClick={() => handleToggle(index)}>
+                    {activeKey === index ? (
+                      <FaMinus className="mx-2" />
+                    ) : (
+                      <FaPlus className="mx-2" />
+                    )}{" "}
+                    {item.title}
+                  </Accordion.Header>
+                  <Accordion.Body>{item.content}</Accordion.Body>
+                </Accordion.Item>
+              ))}
+            </Accordion>
+          </Col>
+        </Row>
+      </Container>
     </>
   );
 };
