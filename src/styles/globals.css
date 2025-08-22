@@ -1,8 +1,8 @@
 /* ===== Root Theme Variables ===== */
 :root {
-  --primary: #e96429;
-  --secondary: #0c0a0a;
-  --accent: #e96429;
+  --primary: #caef45;
+  --secondary: #28292f;
+  --accent: #caef45;
 
   --border: #eaeaea;
   --shadow: rgba(0, 0, 0, 0.1);
@@ -12,27 +12,29 @@
 }
 
 :root {
-  --background: #0c0a0a;
+  --background: #28292f;
   --foreground: #ecf6ed;
 
   --heading: #ffffff;
-  --text: #b3b3b3;
-  --muted-text: #9a9a9a;
+  --text: #c1c1c1;
+  --muted-text: #2c2c2c;
 
-  --link: #b3b3b3;
-  --link-hover: #e96429;
+  --divider: #caef45;
 
-  --button-bg: #e96429;
-  --button-text: #ffffff;
-  --button-border: #e96429;
+  --link: #c1c1c1;
+  --link-hover: #caef45;
+
+  --button-bg: #caef45;
+  --button-text: #233050;
+  --button-border: #caef45;
   --button-hover-bg: #ffffff;
-  --button-hover-text: #0c0a0a;
+  --button-hover-text: #233050;
   --button-hover-border: #ffffff;
 
   --input-bg: #ffffff;
-  --input-border: #b3b3b3;
+  --input-border: #c1c1c1;
   --input-focus-bg: #ffffff;
-  --input-focus-border: #b3b3b3;
+  --input-focus-border: #c1c1c1;
 }
 
 /* ===== Base Styles ===== */
@@ -94,6 +96,12 @@ h6 {
   font-size: 16px !important;
 }
 
+hr {
+  color: var(--divider) !important;
+  height: 5px;
+  background-color: var(--divider);
+}
+
 p {
   color: var(--text);
   font-size: 16px !important;
@@ -126,6 +134,7 @@ button {
   background: var(--button-bg) !important;
   color: var(--button-text) !important;
   border: 1px solid var(--button-border) !important;
+  box-shadow: none !important;
   padding: 10px 20px;
   cursor: pointer;
   font-size: 16px;
