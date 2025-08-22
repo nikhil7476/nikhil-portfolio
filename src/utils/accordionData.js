@@ -38,23 +38,64 @@ const accordionData = {
         "To create scalable, user-friendly applications and keep learning new technologies.",
     },
   ],
-  services: [
-    {
-      id: 1,
-      title: "Web Development",
-      content: "I build responsive and SEO-friendly web applications.",
-    },
-    {
-      id: 2,
-      title: "Backend Development",
-      content: "I create secure and scalable REST APIs with Node.js & MongoDB.",
-    },
-    {
-      id: 3,
-      title: "Backend Development",
-      content: "I create secure and scalable REST APIs with Node.js & MongoDB.",
-    },
-  ],
+  services: {
+    main: [
+      {
+        id: "web-development",
+        title: "Web Development",
+        content: "I build responsive and SEO-friendly web applications.",
+      },
+      {
+        id: "backend-development",
+        title: "Backend Development",
+        content:
+          "I create secure and scalable REST APIs with Node.js & MongoDB.",
+      },
+      {
+        id: "mobile-apps",
+        title: "Mobile Apps",
+        content: "Cross-platform mobile apps built with React Native.",
+      },
+    ],
+    "web-development": [
+      {
+        id: 1,
+        title: "What technologies do you use?",
+        content: "React, Next.js, and Tailwind for modern web applications.",
+      },
+      {
+        id: 2,
+        title: "Do you optimize for SEO?",
+        content: "Yes, all websites are optimized for SEO and performance.",
+      },
+    ],
+
+    "backend-development": [
+      {
+        id: 1,
+        title: "What databases do you use?",
+        content: "I specialize in MongoDB, PostgreSQL, and MySQL.",
+      },
+      {
+        id: 2,
+        title: "Do you provide API documentation?",
+        content: "Yes, with Swagger or Postman collections.",
+      },
+    ],
+
+    "mobile-apps": [
+      {
+        id: 1,
+        title: "Do you build cross-platform apps?",
+        content: "Yes, I use React Native and Flutter.",
+      },
+      {
+        id: 2,
+        title: "Will the app work on both iOS and Android?",
+        content: "Yes, apps are compatible with both platforms.",
+      },
+    ],
+  },
   portfolio: [
     {
       id: 1,

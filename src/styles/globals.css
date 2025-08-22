@@ -144,9 +144,9 @@ ul li {
 
 /* ===== Sections ==== */
 
-section:nth-child(even) {
+/* section:nth-child(even) {
   background: var(--section) !important;
-}
+} */
 
 /* ===== Buttons ===== */
 button {

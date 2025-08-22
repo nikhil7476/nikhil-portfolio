@@ -1,7 +1,76 @@
-import React from "react";
+import { useRouter } from "next/router";
+import TestimonialCarousel from "@/components/TestimonialCarousel";
+import testimonialData from "@/utils/testimonialData";
+import accordionData from "@/utils/accordionData";
+import FaqAccordion from "@/components/FaqAccordion";
+import { Container, Row, Col, Card, Button } from "react-bootstrap";
+import servicesData from "@/utils/servicesData";
+import Link from "next/link";
+import ContactForm from "@/components/ContactForm";
 
-function ServiceDetail() {
-  return <div>ServiceDetail</div>;
+export default function ServicesDetail() {
+  const router = useRouter();
+  const { id } = router.query;
+
+  const service = servicesData.find((a) => a.slug === id);
+  const serviceFaqs = accordionData.services[id] || [];
+
+  if (!service) {
+    return <p>Loading...</p>; // prevents undefined error
+  }
+
+  return (
+    <>
+      <section
+        className="banner d-flex align-items-center text-white"
+        style={{
+          backgroundImage: `url(${service.featuredImage})`,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          minHeight: "450px",
+        }}
+      >
+        <Container>
+          <span>{service.subtitle}</span>
+          <h1 className="fw-bold">{service.title}</h1>
+          <ul className="breadcrumb d-flex align-items-center gap-2">
+            <li>
+              <Link href="/" title="Home">
+                Home
+              </Link>
+            </li>
+            <li>{"/"}</li>
+            <li>
+              <Link href="/services" title="Services">
+                Services
+              </Link>
+            </li>
+            <li>{"/"}</li>
+            <li>{service.title}</li>
+          </ul>
+        </Container>
+      </section>
+      <section>
+        <Container>
+          <Row>
+            <Col xl={6} lg={6} md={6} sm={12} xs={12}>
+              <span>Happy Clients</span>
+              <h2>What My Client Say,</h2>
+              <hr />
+              <TestimonialCarousel data={testimonialData.services} />
+            </Col>
+            <Col xl={6} lg={6} md={6} sm={12} xs={12}>
+              <span>Contact Me</span>
+              <h2>Get in touch with me!</h2>
+              <hr />
+              <ContactForm />
+            </Col>
+          </Row>
+        </Container>
+      </section>
+      <section>
+        <FaqAccordion data={serviceFaqs} />
+      </section>
+    </>
+  );
 }
-
-export default ServiceDetail;

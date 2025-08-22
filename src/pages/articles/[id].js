@@ -52,6 +52,7 @@ export default function BlogSingle() {
         }}
       >
         <Container>
+          <span>News & Articles</span>
           <h1 className="fw-bold">{article.title}</h1>
           <ul className="breadcrumb d-flex align-items-center gap-2">
             <li>
@@ -59,13 +60,13 @@ export default function BlogSingle() {
                 Home
               </Link>
             </li>
-            <li>{">>"}</li>
+            <li>{"/"}</li>
             <li>
               <Link href="/articles" title="Articles">
                 Articles
               </Link>
             </li>
-            <li>{">>"}</li>
+            <li>{"/"}</li>
             <li>{article.title}</li>
           </ul>
         </Container>
