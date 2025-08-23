@@ -3,7 +3,7 @@ import TestimonialCarousel from "@/components/TestimonialCarousel";
 import testimonialData from "@/utils/testimonialData";
 import accordionData from "@/utils/accordionData";
 import FaqAccordion from "@/components/FaqAccordion";
-import { Container, Row, Col, Card, Button } from "react-bootstrap";
+import { Container, Row, Col } from "react-bootstrap";
 import servicesData from "@/utils/servicesData";
 import Link from "next/link";
 import ContactForm from "@/components/ContactForm";
@@ -21,7 +21,7 @@ export default function ServicesDetail() {
 
   return (
     <>
-      <section
+      <div
         className="banner d-flex align-items-center text-white"
         style={{
           backgroundImage: `url(${service.featuredImage})`,
@@ -49,7 +49,7 @@ export default function ServicesDetail() {
             <li>{service.title}</li>
           </ul>
         </Container>
-      </section>
+      </div>
       <section>
         <Container>
           <Row>

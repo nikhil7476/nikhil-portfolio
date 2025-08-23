@@ -42,7 +42,7 @@ export default function BlogSingle() {
         <meta name="twitter:description" content={article.metaDescription} />
         <meta name="twitter:image" content={article.featuredImage} />
       </Head>
-      <section
+      <div
         className="banner d-flex align-items-center text-white"
         style={{
           backgroundImage: `url(${article.featuredImage})`,
@@ -70,7 +70,7 @@ export default function BlogSingle() {
             <li>{article.title}</li>
           </ul>
         </Container>
-      </section>
+      </div>
       <section>
         <Container className="py-5">
           <h2 className="fw-bold mb-3">{article.title}</h2>

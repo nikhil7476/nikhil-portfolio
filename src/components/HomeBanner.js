@@ -3,13 +3,14 @@
 import Link from "next/link";
 import homeBannerData from "@/utils/homeBannerData";
 import { Carousel, Col, Container, Row } from "react-bootstrap";
+import { FaArrowRightLong } from "react-icons/fa6";
 
 const HomeBanner = () => {
   return (
     <Carousel fade indicators={true} controls={true} interval={4000}>
       {homeBannerData.map((slide) => (
         <Carousel.Item key={slide.id}>
-          <section
+          <div
             style={{
               backgroundImage: `url(${slide.bgImage})`,
               backgroundSize: "cover",
@@ -29,12 +30,12 @@ const HomeBanner = () => {
                     title={slide.ctaText}
                     className="ctaButton"
                   >
-                    {slide.ctaText}
+                    {slide.ctaText} <FaArrowRightLong />
                   </Link>
                 </Col>
               </Row>
             </Container>
-          </section>
+          </div>
         </Carousel.Item>
       ))}
     </Carousel>
