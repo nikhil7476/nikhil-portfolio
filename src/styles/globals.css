@@ -67,12 +67,17 @@ a:hover {
   color: var(--link-hover) !important;
 }
 
+<<<<<<< HEAD
 section {
   padding: 30px 0px;
 }
 
 section:nth-child(odd) {
   background: var(--section) !important;
+=======
+.section {
+  padding: 30px 20px;
+>>>>>>> 1e8ba406427489933ab9c0ecbfa461701b919d09
 }
 
 .row,
