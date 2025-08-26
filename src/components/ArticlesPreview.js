@@ -1,6 +1,7 @@
 import articlesData from "@/utils/articlesData";
 import Link from "next/link";
 import Image from "next/image";
+import { Col, Row } from "react-bootstrap";
 
 function ArticlesPreview() {
   // take the latest 4 articles (assuming last ones are the newest)
@@ -8,9 +9,17 @@ function ArticlesPreview() {
 
   return (
     <>
-      <div className="d-flex flex-wrap justify-content-between">
+      <Row className="d-flex flex-wrap justify-content-between">
         {latestArticles.map((article) => (
-          <div key={article.id} style={{ width: "24%" }}>
+          <Col
+            key={article.id}
+            xl={3}
+            lg={3}
+            md={6}
+            sm={12}
+            xs={12}
+            className="mb-4"
+          >
             <div>
               <Link href={`/articles/${article.slug}`}>
                 <Image
@@ -27,9 +36,9 @@ function ArticlesPreview() {
             <div className="m-2">
               <Link href={`/articles/${article.slug}`}>{article.title}</Link>
             </div>
-          </div>
+          </Col>
         ))}
-      </div>
+      </Row>
     </>
   );
 }
