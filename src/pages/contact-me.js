@@ -33,7 +33,7 @@ function Contact() {
               md={6}
               sm={12}
               xs={12}
-              className="align-content-center"
+              className="mb-3 align-content-center"
             >
               <p>{contactData.description}</p>
               <ul className="list-unstyled">
@@ -52,7 +52,7 @@ function Contact() {
                 </li>
               </ul>
             </Col>
-            <Col xl={6} lg={6} md={6} sm={12} xs={12}>
+            <Col xl={6} lg={6} md={6} sm={12} xs={12} className="mb-2 align-content-center" >
               <ContactForm />
             </Col>
           </Row>
