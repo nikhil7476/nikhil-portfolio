@@ -32,8 +32,8 @@ function Footer() {
             </Col>
             <Col xl={3} lg={3} md={6} sm={12} xs={12} className="mb-3">
               <h3>Contact</h3>
-              <p>5919 Trussville Crossings Pkwy, Birmingham</p>
               <ul className="list-unstyled">
+                <li>5919 Trussville Crossings Pkwy, Birmingham</li>
                 <li className="mb-2">
                   <Link
                     href="mailto:nikhil7476@gmail.com"
