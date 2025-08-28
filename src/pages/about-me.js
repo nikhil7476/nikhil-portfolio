@@ -34,7 +34,7 @@ function About() {
               md={6}
               sm={12}
               xs={12}
-              className="mb-2 align-content-center"
+              className="mb-3 align-content-center"
             >
               <Image
                 src={aboutData.about.image}
@@ -52,7 +52,7 @@ function About() {
               md={6}
               sm={12}
               xs={12}
-              className="mb-2 align-content-center"
+              className="mb-3 align-content-center"
             >
               <p>{aboutData.about.description}</p>
               <Link
@@ -84,7 +84,7 @@ function About() {
                 md={6}
                 sm={6}
                 xs={6}
-                className="mb-2 text-center align-content-center"
+                className="mb-3 text-center align-content-center"
               >
                 <Image
                   src={tech.icon}
@@ -103,10 +103,10 @@ function About() {
       <section>
         <Container>
           <Row>
-            <Col xl={6} lg={6} md={6} sm={12} xs={12} className="mb-2" >
+            <Col xl={6} lg={6} md={6} sm={12} xs={12} className="mb-3" >
               <TestimonialCarousel data={testimonialData.about} />
             </Col>
-            <Col xl={6} lg={6} md={6} sm={12} xs={12} className="mb-2">
+            <Col xl={6} lg={6} md={6} sm={12} xs={12} className="mb-3">
               <ContactForm />
             </Col>
           </Row>
