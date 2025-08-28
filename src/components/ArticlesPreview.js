@@ -18,7 +18,7 @@ function ArticlesPreview() {
             md={6}
             sm={12}
             xs={12}
-            className="mb-4"
+            className="mb-3"
           >
             <div>
               <Link href={`/articles/${article.slug}`}>
