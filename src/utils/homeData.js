@@ -11,6 +11,8 @@ const homeData = {
     ctaText: "Know More About Me",
     ctaLink: "/about-me",
     image: "/website-assets/about-me.png",
+    imageAlt: "about-me",
+    imageTitle: "About Me",
   },
   section2: {
     subheading: "Why Me",
@@ -18,6 +20,8 @@ const homeData = {
     ctaText: "Explore My Services",
     ctaLink: "/services",
     image: "/website-assets/why-choose-us.jpg",
+    imageAlt: "why-me",
+    imageTitle: "Why Me",
     iconBox: [
       {
         icon: <IoMdCheckboxOutline />,
@@ -38,6 +42,14 @@ const homeData = {
           "Our custom-built solutions grows with your business and adapts to your future needs.",
       },
     ],
+  },
+  articleSection: {
+    subheading: "Latest Articles",
+    title: "Read My Latest Articles & News",
+    description:
+      "Stay updated with the latest trends and insights in web development and digital marketing through my articles and news updates.",
+    ctaText: "Explore Articles",
+    ctaLink: "/articles",
   },
 };
 

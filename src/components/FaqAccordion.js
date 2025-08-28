@@ -37,7 +37,6 @@ const FaqAccordion = ({ data }) => {
             <span>FAQs</span>
             <h2>Frequently Asked Questions</h2>
             <hr />
-
             <Accordion activeKey={activeKey} flush>
               {data.map((item, index) => (
                 <Accordion.Item

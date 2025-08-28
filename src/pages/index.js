@@ -31,8 +31,8 @@ function Home() {
             >
               <Image
                 src={homeData.section1.image}
-                alt="about-me"
-                title="About Me"
+                alt={homeData.section1.imageAlt}
+                title={homeData.section1.imageTitle}
                 width={500}
                 height={600}
                 className="img-fluid rounded"
@@ -52,7 +52,7 @@ function Home() {
               <p>{homeData.section1.description}</p>
               <Link
                 href={homeData.section1.ctaLink}
-                title="About Me"
+                title={homeData.section1.ctaText}
                 className="ctaButton"
               >
                 {homeData.section1.ctaText} <FaArrowRightLong />
@@ -103,9 +103,9 @@ function Home() {
               className="align-content-center"
             >
               <Image
-                src="/website-assets/why-choose-us.jpg"
-                alt="why-me"
-                title="Why Me"
+                src={homeData.section2.image}
+                alt={homeData.section2.imageAlt}
+                title={homeData.section2.imageTitle}
                 width={666}
                 height={600}
                 className="img-fluid rounded"
@@ -116,7 +116,7 @@ function Home() {
             <Col className="text-center">
               <Link
                 href={homeData.section2.ctaLink}
-                title="Services"
+                title={homeData.section2.ctaText}
                 className="ctaButton"
               >
                 {homeData.section2.ctaText} <FaArrowRightLong />
@@ -129,15 +129,9 @@ function Home() {
         <Container>
           <Row>
             <Col xl={6} lg={6} md={6} sm={12} xs={12}>
-              <span>Happy Clients</span>
-              <h2>What My Client Say,</h2>
-              <hr />
               <TestimonialCarousel data={testimonialData.home} />
             </Col>
             <Col xl={6} lg={6} md={6} sm={12} xs={12}>
-              <span>Contact Me</span>
-              <h2>Get in touch with me!</h2>
-              <hr />
               <ContactForm />
             </Col>
           </Row>
@@ -147,21 +141,21 @@ function Home() {
         <Container>
           <Row>
             <Col>
-              <span>Latest Articles</span>
-              <h2>Read My Latest Articles & News</h2>
+              <span>{homeData.articleSection.subheading}</span>
+              <h2>{homeData.articleSection.title}</h2>
               <hr />
-              <p>
-                Stay updated with the latest trends and insights in web
-                development and digital marketing through my articles and news
-                updates.
-              </p>
+              <p>{homeData.articleSection.description}</p>
               <ArticlesPreview />
             </Col>
           </Row>
           <Row>
             <Col className="text-center">
-              <Link href="/articles" title="Articles" className="ctaButton">
-                Explore Articles <FaArrowRightLong />
+              <Link
+                href={homeData.articleSection.ctaLink}
+                title={homeData.articleSection.ctaText}
+                className="ctaButton"
+              >
+                {homeData.articleSection.ctaText} <FaArrowRightLong />
               </Link>
             </Col>
           </Row>
