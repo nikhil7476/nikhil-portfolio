@@ -75,12 +75,13 @@ section:nth-child(odd) {
   background: var(--section) !important;
 }
 
-.row {
+.row, 
+.col {
   padding: 10px;
 }
 
 .col {
-  padding: 20px;
+  margin-bottom: 10px;
 }
 
 h1,
