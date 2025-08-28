@@ -10,6 +10,7 @@ import {
   FaPhoneAlt,
   FaTwitter,
 } from "react-icons/fa";
+import { MdAddLocationAlt } from "react-icons/md";
 import NewsletterForm from "./NewsletterForm";
 
 function Footer() {
@@ -33,14 +34,14 @@ function Footer() {
             <Col xl={3} lg={3} md={6} sm={12} xs={12} className="mb-3">
               <h3>Contact</h3>
               <ul className="list-unstyled">
-                <li>5919 Trussville Crossings Pkwy, Birmingham</li>
+                <li><MdAddLocationAlt /> 5919 Trussville Crossings Pkwy, Birmingham</li>
                 <li className="mb-2">
                   <Link
-                    href="mailto:nikhil7476@gmail.com"
+                    href="mailto:nikhilmishra7476@gmail.com"
                     title="Mail Me"
                     className="text-decoration-none"
                   >
-                    <FaEnvelope /> nikhil7476@gmail.com
+                    <FaEnvelope /> nikhilmishra7476@gmail.com
                   </Link>
                 </li>
                 <li className="mb-2">
