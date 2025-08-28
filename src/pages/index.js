@@ -27,7 +27,7 @@ function Home() {
               md={6}
               sm={12}
               xs={12}
-              className="align-content-center"
+              className="mb-3 align-content-center"
             >
               <Image
                 src={homeData.section1.image}
@@ -44,7 +44,7 @@ function Home() {
               md={6}
               sm={12}
               xs={12}
-              className="align-content-center"
+              className="mb-3 align-content-center"
             >
               <span>{homeData.section1.subheading}</span>
               <h2>{homeData.section1.title}</h2>
@@ -77,7 +77,7 @@ function Home() {
               md={6}
               sm={12}
               xs={12}
-              className="align-content-center"
+              className="mb-3 align-content-center"
             >
               <div>
                 {homeData.section2.iconBox.map((item, index) => (
@@ -100,7 +100,7 @@ function Home() {
               md={6}
               sm={12}
               xs={12}
-              className="align-content-center"
+              className="mb-3 align-content-center"
             >
               <Image
                 src={homeData.section2.image}
@@ -128,10 +128,10 @@ function Home() {
       <section>
         <Container>
           <Row>
-            <Col xl={6} lg={6} md={6} sm={12} xs={12}>
+            <Col xl={6} lg={6} md={6} sm={12} xs={12} className="mb-3" >
               <TestimonialCarousel data={testimonialData.home} />
             </Col>
-            <Col xl={6} lg={6} md={6} sm={12} xs={12}>
+            <Col xl={6} lg={6} md={6} sm={12} xs={12} className="mb-3" >
               <ContactForm />
             </Col>
           </Row>
