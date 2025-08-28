@@ -3,7 +3,7 @@ const contactData = {
   title: "Your Next Digital Solution Starts Here",
   description:
     "Whether you’re looking for a new website, a custom software solution, or digital marketing services, we’re here to help. Fill out the form below or reach out directly, and we’ll get back to you as soon as possible.",
-  email: "nikhil9027917476@gmail.com",
+  email: "nikhilmishra7476@gmail.com",
   phone: "+91-9027917476",
   address: "Bangalore, India",
   mapLink:
