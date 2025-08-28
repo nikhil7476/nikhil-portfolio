@@ -128,7 +128,7 @@ function Footer() {
               <NewsletterForm />
             </Col>
           </Row>
-          <Row className="m-2 bg-light rounded p-2">
+          <Row className="mx-2 bg-light rounded p-2">
             <Col
               xl={12}
               lg={12}
