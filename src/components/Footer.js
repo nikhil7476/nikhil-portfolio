@@ -18,7 +18,7 @@ function Footer() {
       <section>
         <Container>
           <Row className="my-5">
-            <Col xl={3} lg={3} md={6} sm={12} xs={12}>
+            <Col xl={3} lg={3} md={6} sm={12} xs={12} className="mb-3" >
               <Link href="/" title="Home">
                 <Image
                   src="/nikhil-logo.jpeg"
@@ -30,7 +30,7 @@ function Footer() {
                 />
               </Link>
             </Col>
-            <Col xl={3} lg={3} md={6} sm={12} xs={12}>
+            <Col xl={3} lg={3} md={6} sm={12} xs={12} className="mb-3">
               <h3>Contact</h3>
               <p>5919 Trussville Crossings Pkwy, Birmingham</p>
               <ul className="list-unstyled">
@@ -54,7 +54,7 @@ function Footer() {
                 </li>
               </ul>
             </Col>
-            <Col xl={3} lg={3} md={6} sm={12} xs={12}>
+            <Col xl={3} lg={3} md={6} sm={12} xs={12} className="mb-3" >
               <h3>Useful Links</h3>
               <ul className="list-unstyled">
                 <li className="mb-2">
@@ -84,7 +84,7 @@ function Footer() {
                 </li>
               </ul>
             </Col>
-            <Col xl={3} lg={3} md={6} sm={12} xs={12}>
+            <Col xl={3} lg={3} md={6} sm={12} xs={12} className="mb-3" >
               <h3>Follow Me</h3>
               <ul className="list-unstyled d-flex gap-3">
                 <li className="mb-2">
@@ -128,7 +128,7 @@ function Footer() {
               <NewsletterForm />
             </Col>
           </Row>
-          <Row className="my-3 bg-light rounded py-2">
+          <Row className="m-2 bg-light rounded p-2">
             <Col
               xl={12}
               lg={12}
