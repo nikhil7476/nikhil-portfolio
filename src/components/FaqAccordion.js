@@ -16,7 +16,7 @@ const FaqAccordion = ({ data }) => {
     <>
       <Container>
         <Row>
-          <Col xl={5} lg={5} md={6} sm={12} xs={12}>
+          <Col xl={5} lg={5} md={6} sm={12} xs={12} className="mb-3" >
             <Image
               src="/website-assets/faqs.png"
               alt="FAQs-Image"
@@ -32,7 +32,7 @@ const FaqAccordion = ({ data }) => {
             md={6}
             sm={12}
             xs={12}
-            className="align-content-center"
+            className="mb-3 align-content-center"
           >
             <span>FAQs</span>
             <h2>Frequently Asked Questions</h2>
