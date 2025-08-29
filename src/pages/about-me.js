@@ -94,7 +94,7 @@ function About() {
                 lg={3}
                 md={6}
                 sm={6}
-                xs={12}
+                xs={6}
                 className="mb-3 text-center align-content-center"
               >
                 <CountUp
