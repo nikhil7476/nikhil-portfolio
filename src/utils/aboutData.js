@@ -23,6 +23,28 @@ const aboutData = {
     ctaText: "Contact Me",
     ctaLink: "/contact-me",
   },
+  aboutStats = [
+    {
+      id: 1,
+      label: "Years of Experience",
+      value: 5,
+    },
+    {
+      id: 2,
+      label: "Projects Completed",
+      value: 20,
+    },
+    {
+      id: 3,
+      label: "Happy Clients",
+      value: 10,
+    },
+    {
+      id: 4,
+      label: "Technologies Mastered",
+      value: 15,
+    },
+  ],
   myExperience: {
     subheading: "Experience",
     title: "My Professional Journey",
