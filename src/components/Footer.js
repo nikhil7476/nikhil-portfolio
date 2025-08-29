@@ -19,7 +19,7 @@ function Footer() {
       <section>
         <Container>
           <Row className="my-5">
-            <Col xl={3} lg={3} md={6} sm={12} xs={12} className="mb-3" >
+            <Col xl={3} lg={3} md={6} sm={12} xs={12} className="mb-3">
               <Link href="/" title="Home">
                 <Image
                   src="/nikhil-logo.jpeg"
@@ -34,14 +34,16 @@ function Footer() {
             <Col xl={3} lg={3} md={6} sm={12} xs={12} className="mb-3">
               <h3>Contact</h3>
               <ul className="list-unstyled">
-                <li className="mb-2"><MdAddLocationAlt /> 5919 Trussville Crossings Pkwy, Birmingham</li>
+                <li className="mb-2">
+                  <MdAddLocationAlt /> Auraiya, Uttar Pradesh, IN
+                </li>
                 <li className="mb-2">
                   <Link
-                    href="mailto:nikhilmishra7476@gmail.com"
+                    href="mailto:nkm7476@gmail.com"
                     title="Mail Me"
                     className="text-decoration-none"
                   >
-                    <FaEnvelope /> nikhilmishra7476@gmail.com
+                    <FaEnvelope /> nkm7476@gmail.com
                   </Link>
                 </li>
                 <li className="mb-2">
@@ -55,7 +57,7 @@ function Footer() {
                 </li>
               </ul>
             </Col>
-            <Col xl={3} lg={3} md={6} sm={12} xs={12} className="mb-3" >
+            <Col xl={3} lg={3} md={6} sm={12} xs={12} className="mb-3">
               <h3>Useful Links</h3>
               <ul className="list-unstyled">
                 <li className="mb-2">
@@ -85,7 +87,7 @@ function Footer() {
                 </li>
               </ul>
             </Col>
-            <Col xl={3} lg={3} md={6} sm={12} xs={12} className="mb-3" >
+            <Col xl={3} lg={3} md={6} sm={12} xs={12} className="mb-3">
               <h3>Follow Me</h3>
               <ul className="list-unstyled d-flex gap-3">
                 <li className="mb-2">
