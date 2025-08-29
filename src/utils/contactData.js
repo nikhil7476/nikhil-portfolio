@@ -7,7 +7,7 @@ const contactData = {
   phone: "+91-9027917476",
   address: "Auraiya, Uttar Pradesh, India 206121",
   mapLink:
-    "https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d222.4902378177241!2d81.02342967396466!3d26.844919848530484!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1755949820528!5m2!1sen!2sin",
+    "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d94206.35929306537!2d79.35743360010893!3d26.462010946911118!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399df3adae51a67b%3A0x8fdd186745eedbe5!2sAuraiya%2C%20Uttar%20Pradesh%20206122!5e1!3m2!1sen!2sin!4v1756495705905!5m2!1sen!2sin",
 };
 
 export default contactData;
