@@ -93,7 +93,7 @@ function About() {
                 xl={3}
                 lg={3}
                 md={6}
-                sm={12}
+                sm={6}
                 xs={12}
                 className="mb-3 text-center align-content-center"
               >
