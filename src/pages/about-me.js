@@ -1,14 +1,13 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
+import CountUp from "react-countup";
 import { Container, Row, Col } from "react-bootstrap";
 import { FaArrowRightLong } from "react-icons/fa6";
 import MetaHead from "@/components/MetaHead";
 import Banner from "@/components/Banner";
 import bannerData from "@/utils/bannerData";
 import aboutData from "@/utils/aboutData";
-import CountUp from "react-countup";
-import { aboutStats } from "@/utils/aboutData";
 import ContactForm from "@/components/ContactForm";
 import TestimonialCarousel from "@/components/TestimonialCarousel";
 import testimonialData from "@/utils/testimonialData";
