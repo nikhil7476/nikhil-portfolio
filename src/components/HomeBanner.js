@@ -7,7 +7,7 @@ import { FaArrowRightLong } from "react-icons/fa6";
 
 const HomeBanner = () => {
   return (
-    <Carousel fade indicators={true} controls={true} interval={4000}>
+    <Carousel fade indicators={true} controls={false} interval={4000}>
       {homeBannerData.map((slide) => (
         <Carousel.Item key={slide.id}>
           <div

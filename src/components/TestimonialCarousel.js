@@ -12,7 +12,7 @@ const TestimonialCarousel = ({ data }) => {
       <span>Happy Clients</span>
       <h2>What My Client Say,</h2>
       <hr />
-      <Carousel interval={5000} indicators={true} controls={true}>
+      <Carousel interval={5000} indicators={true} controls={false} pause="hover">
         {data.map((item) => (
           <Carousel.Item key={item.id}>
             <div className="d-flex flex-column align-items-center text-center p-4">
