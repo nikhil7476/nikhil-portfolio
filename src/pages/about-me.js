@@ -69,14 +69,72 @@ function About() {
       <section>
         <Container>
           <Row>
+            <Col xl={6} lg={6} md={6} sm={12} xs={12} className="mb-3">
+              <Row>
+                <Col>
+                  <span>{aboutData.myExperience.subheading}</span>
+                  <h2>{aboutData.myExperience.title}</h2>
+                  <hr />
+                </Col>
+              </Row>
+              <Row>
+                {aboutData.myExperience.experience.map((experience) => (
+                  <Col
+                    xl={12}
+                    lg={12}
+                    md={12}
+                    sm={12}
+                    xs={12}
+                    key={experience.id}
+                    className="mb-3 align-content-center"
+                  >
+                    <span>{experience.duration}</span>
+                    <h3>{experience.title}</h3>
+                    <p>{experience.company}</p>
+                  </Col>
+                ))}
+              </Row>
+            </Col>
+            <Col xl={6} lg={6} md={6} sm={12} xs={12} className="mb-3">
+              <Row>
+                <Col>
+                  <span>{aboutData.myEducation.subheading}</span>
+                  <h2>{aboutData.myEducation.title}</h2>
+                  <hr />
+                </Col>
+              </Row>
+              <Row>
+                {aboutData.myEducation.education.map((education) => (
+                  <Col
+                    xl={12}
+                    lg={12}
+                    md={12}
+                    sm={12}
+                    xs={12}
+                    key={education.id}
+                    className="mb-3 align-content-center"
+                  >
+                    <span>{education.duration}</span>
+                    <h3>{education.degree}</h3>
+                    <p>{education.institution}</p>
+                  </Col>
+                ))}
+              </Row>
+            </Col>
+          </Row>
+        </Container>
+      </section>
+      <section>
+        <Container>
+          <Row>
             <Col>
-              <span>Tech Stack</span>
-              <h2>My Technical Skills</h2>
+              <span>{aboutData.techSection.subheading}</span>
+              <h2>{aboutData.techSection.title}</h2>
               <hr />
             </Col>
           </Row>
           <Row>
-            {aboutData.technology.map((tech) => (
+            {aboutData.techSection.technology.map((tech) => (
               <Col
                 key={tech.id}
                 xl={3}
@@ -103,7 +161,7 @@ function About() {
       <section>
         <Container>
           <Row>
-            <Col xl={6} lg={6} md={6} sm={12} xs={12} className="mb-3" >
+            <Col xl={6} lg={6} md={6} sm={12} xs={12} className="mb-3">
               <TestimonialCarousel data={testimonialData.about} />
             </Col>
             <Col xl={6} lg={6} md={6} sm={12} xs={12} className="mb-3">
