@@ -16,7 +16,7 @@ const aboutData = {
     experience: [
       {
         id: 1,
-        title: "Associate Web Developer",
+        title: "Associate Software Developer",
         company: "Nextupgrad Web Solutions Pvt Ltd, Lucknow",
         duration: "Dec 2023 - Present",
       },
