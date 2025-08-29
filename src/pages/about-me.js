@@ -7,6 +7,8 @@ import MetaHead from "@/components/MetaHead";
 import Banner from "@/components/Banner";
 import bannerData from "@/utils/bannerData";
 import aboutData from "@/utils/aboutData";
+import CountUp from "react-countup";
+import { aboutStats } from "@/utils/aboutData";
 import ContactForm from "@/components/ContactForm";
 import TestimonialCarousel from "@/components/TestimonialCarousel";
 import testimonialData from "@/utils/testimonialData";
@@ -82,6 +84,28 @@ function About() {
           </Row>
         </Container>
       </section>
+<section className="py-12 bg-gray-50">
+      <div className="max-w-6xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+        {aboutStats.map((stat) => (
+          <div
+            key={stat.id}
+            className="p-6 bg-white rounded-2xl shadow-md hover:shadow-lg transition"
+          >
+            <h2 className="text-3xl font-bold text-blue-600">
+              <CountUp
+                start={0}
+                end={stat.value}
+                duration={2}
+                suffix="+"
+                enableScrollSpy
+                scrollSpyOnce
+              />
+            </h2>
+            <p className="mt-2 text-gray-700 font-medium">{stat.label}</p>
+          </div>
+        ))}
+      </div>
+    </section>
       <section>
         <Container>
           <Row>
