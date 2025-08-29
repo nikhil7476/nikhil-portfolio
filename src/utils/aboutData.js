@@ -23,7 +23,7 @@ const aboutData = {
     ctaText: "Contact Me",
     ctaLink: "/contact-me",
   },
-  aboutStats = [
+  aboutStats: [
     {
       id: 1,
       label: "Years of Experience",

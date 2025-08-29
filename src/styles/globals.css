@@ -75,7 +75,7 @@ section:nth-child(odd) {
   background: var(--section) !important;
 }
 
-.row, 
+.row,
 .col {
   padding: 10px;
 }
@@ -199,6 +199,17 @@ textarea:active {
   border: 1px solid var(--input-focus-border) !important;
   outline: none !important;
   box-shadow: none !important;
+}
+
+/* ===== Stats Styling ===== */
+.statValue {
+  color: #ffffff00;
+  font-size: 100px !important;
+  -webkit-text-stroke-width: 2px;
+  stroke-width: 2px;
+  -webkit-text-stroke-color: var(--primary);
+  stroke: var(--primary);
+  text-shadow: 15px 0px 10px rgba(0, 0, 0, 0.5);
 }
 
 /* ===== Responsive Typography ===== */

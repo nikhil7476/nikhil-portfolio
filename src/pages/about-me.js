@@ -84,28 +84,34 @@ function About() {
           </Row>
         </Container>
       </section>
-<section className="py-12 bg-gray-50">
-      <div className="max-w-6xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
-        {aboutStats.map((stat) => (
-          <div
-            key={stat.id}
-            className="p-6 bg-white rounded-2xl shadow-md hover:shadow-lg transition"
-          >
-            <h2 className="text-3xl font-bold text-blue-600">
-              <CountUp
-                start={0}
-                end={stat.value}
-                duration={2}
-                suffix="+"
-                enableScrollSpy
-                scrollSpyOnce
-              />
-            </h2>
-            <p className="mt-2 text-gray-700 font-medium">{stat.label}</p>
-          </div>
-        ))}
-      </div>
-    </section>
+      <section>
+        <Container>
+          <Row>
+            {aboutData.aboutStats.map((stat) => (
+              <Col
+                key={stat.id}
+                xl={3}
+                lg={3}
+                md={6}
+                sm={12}
+                xs={12}
+                className="mb-3 text-center align-content-center"
+              >
+                <CountUp
+                  start={0}
+                  end={stat.value}
+                  duration={2}
+                  suffix="+"
+                  className="statValue"
+                  enableScrollSpy
+                  scrollSpyOnce
+                />
+                <p>{stat.label}</p>
+              </Col>
+            ))}
+          </Row>
+        </Container>
+      </section>
       <section>
         <Container>
           <Row>
