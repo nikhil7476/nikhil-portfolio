@@ -54,15 +54,9 @@ export default function ServicesDetail() {
         <Container>
           <Row>
             <Col xl={6} lg={6} md={6} sm={12} xs={12}>
-              <span>Happy Clients</span>
-              <h2>What My Client Say,</h2>
-              <hr />
               <TestimonialCarousel data={testimonialData.services} />
             </Col>
             <Col xl={6} lg={6} md={6} sm={12} xs={12}>
-              <span>Contact Me</span>
-              <h2>Get in touch with me!</h2>
-              <hr />
               <ContactForm />
             </Col>
           </Row>
