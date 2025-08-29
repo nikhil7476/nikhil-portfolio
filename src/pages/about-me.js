@@ -185,7 +185,7 @@ function About() {
                 key={tech.id}
                 xl={3}
                 lg={3}
-                md={6}
+                md={4}
                 sm={6}
                 xs={6}
                 className="mb-3 text-center align-content-center"
