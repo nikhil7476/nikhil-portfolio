@@ -55,6 +55,22 @@ function About() {
               className="mb-3 align-content-center"
             >
               <p>{aboutData.about.description}</p>
+              <h3>{aboutData.about.highlightHeading}</h3>
+              <Row>
+                {aboutData.about.highlights.map((highlight, index) => (
+                  <Col
+                    key={index}
+                    xl={4}
+                    lg={4}
+                    md={4}
+                    sm={6}
+                    xs={12}
+                    className="mb-3"
+                  >
+                    <li>{highlight}</li>
+                  </Col>
+                ))}
+              </Row>
               <Link
                 href={aboutData.about.ctaLink}
                 title={aboutData.about.ctaText}

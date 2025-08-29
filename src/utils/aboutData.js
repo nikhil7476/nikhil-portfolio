@@ -1,9 +1,22 @@
 const aboutData = {
   about: {
     subheading: "About Me",
-    title: "I'm Nikhil Mishra",
+    title: "I'm Nikhil Mishra : A Passionate Creator & Lifelong Learner",
     description:
-      "A passionate web developer with a knack for creating dynamic and responsive web applications. With a strong foundation in both front-end and back-end technologies, I thrive on transforming ideas into functional digital experiences. My journey in web development is driven by continuous learning and a commitment to delivering high-quality solutions. Whether working independently or collaborating within a team, I bring creativity, problem-solving skills, and a user-centric approach to every project I undertake. Let's connect and build something amazing together!",
+      "I am a curious and dedicated individual with a passion for technology, creativity, and continuous growth. I enjoy exploring new ideas, solving real-world problems, and building innovative solutions that make a difference. Collaboration excites me, as it allows me to share my skills while learning from others. With a blend of technical expertise and creative thinking, I aim to bring value to every project and keep pushing myself toward new milestones.",
+    highlightHeading: "Here are a Few Highlights:",
+    highlights: [
+      "Creative Thinker",
+      "Tech Enthusiast",
+      "Problem Solver",
+      "Team Player",
+      "Quick Learner",
+      "Adaptable Mindset",
+      "Strong Communicator",
+      "Detail Oriented",
+      "Growth Oriented",
+    ],
+
     image: "/website-assets/nikhil-logo.jpeg",
     imageAlt: "Nikhil Mishra",
     imageTitle: "Nikhil Mishra",
