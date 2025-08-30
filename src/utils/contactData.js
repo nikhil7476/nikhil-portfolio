@@ -1,6 +1,6 @@
 const contactData = {
-  subheading: "Get in Touch With Us",
-  title: "Your Next Digital Solution Starts Here",
+  subheading: "Let’s Connect",
+  title: "Reach Me Anytime",
   description:
     "Whether you’re looking for a new website, a custom software solution, or digital marketing services, we’re here to help. Fill out the form below or reach out directly, and we’ll get back to you as soon as possible.",
   email: "nkm7476@gmail.com",
