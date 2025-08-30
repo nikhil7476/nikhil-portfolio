@@ -26,7 +26,7 @@ function Contact() {
               md={6}
               sm={12}
               xs={12}
-              className="mb-3 align-content-center"
+              className="mb-3"
             >
               <span>{contactData.subheading}</span>
               <h2>{contactData.title}</h2>
@@ -54,7 +54,7 @@ function Contact() {
               md={6}
               sm={12}
               xs={12}
-              className="mb-3 align-content-center"
+              className="mb-3"
             >
               <ContactForm />
             </Col>
