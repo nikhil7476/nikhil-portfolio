@@ -20,13 +20,6 @@ function Contact() {
       <section>
         <Container>
           <Row>
-            <Col>
-              <span>{contactData.subheading}</span>
-              <h2>{contactData.title}</h2>
-              <hr />
-            </Col>
-          </Row>
-          <Row>
             <Col
               xl={6}
               lg={6}
@@ -35,6 +28,9 @@ function Contact() {
               xs={12}
               className="mb-3 align-content-center"
             >
+              <span>{contactData.subheading}</span>
+              <h2>{contactData.title}</h2>
+              <hr />
               <p>{contactData.description}</p>
               <ul className="list-unstyled">
                 <li className="mb-2">
