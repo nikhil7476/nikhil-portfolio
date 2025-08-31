@@ -11,8 +11,12 @@ function Header() {
           className="navbar-transparent"
         >
           <Container>
-            <Navbar.Brand href="/" title="Nikhil Mishra" className="text-light fw-bold">
-              {"<nm /> Nikhil Mishra"}
+            <Navbar.Brand
+              href="/"
+              title="Nikhil Mishra"
+              className="text-light fw-bold"
+            >
+              NIKHIL MISHRA
             </Navbar.Brand>
             <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} />
             <Navbar.Offcanvas
@@ -26,7 +30,7 @@ function Header() {
                   className="text-light"
                   id={`offcanvasNavbarLabel-expand-${expand}`}
                 >
-                  {"<nm /> Nikhil Mishra"}
+                  NIKHIL MISHRA
                 </Offcanvas.Title>
               </Offcanvas.Header>
               <Offcanvas.Body>
