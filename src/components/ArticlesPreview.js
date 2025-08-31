@@ -34,7 +34,9 @@ function ArticlesPreview() {
               </Link>
             </div>
             <div className="m-2">
-              <Link href={`/articles/${article.slug}`}>{article.title}</Link>
+              <Link href={`/articles/${article.slug}`} title={article.title}>
+                {article.title}
+              </Link>
             </div>
           </Col>
         ))}
