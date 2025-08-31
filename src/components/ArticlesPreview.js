@@ -21,7 +21,7 @@ function ArticlesPreview() {
             className="mb-3"
           >
             <div>
-              <Link href={`/articles/${article.slug}`}>
+              <Link href={`/articles/${article.slug}`} title={article.title}>
                 <Image
                   src={article.featuredImage}
                   alt={article.title}
