@@ -11,18 +11,22 @@ function Header() {
           className="navbar-transparent"
         >
           <Container>
-            <Navbar.Brand href="/" title="Nikhil Mishra">
-              Nikhil Mishra
+            <Navbar.Brand href="/" title="Nikhil Mishra" className="text-light fw-bold">
+              {"<nm /> Nikhil Mishra"}
             </Navbar.Brand>
             <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} />
             <Navbar.Offcanvas
               id={`offcanvasNavbar-expand-${expand}`}
               aria-labelledby={`offcanvasNavbarLabel-expand-${expand}`}
               placement="end"
+              className="bg-dark fw-bold"
             >
               <Offcanvas.Header closeButton>
-                <Offcanvas.Title id={`offcanvasNavbarLabel-expand-${expand}`}>
-                  Nikhil Mishra
+                <Offcanvas.Title
+                  className="text-light"
+                  id={`offcanvasNavbarLabel-expand-${expand}`}
+                >
+                  {"<nm /> Nikhil Mishra"}
                 </Offcanvas.Title>
               </Offcanvas.Header>
               <Offcanvas.Body>
