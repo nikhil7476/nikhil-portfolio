@@ -201,6 +201,11 @@ textarea:active {
   box-shadow: none !important;
 }
 
+/* ===== Navbar Styling ===== */
+.navbar-transparent {
+  background-color: rgba(0, 0, 0, 0.75) !important;
+}
+
 /* ===== Stats Styling ===== */
 .statValue {
   color: #ffffff00;

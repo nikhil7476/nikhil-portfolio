@@ -1,128 +1,61 @@
-import Link from "next/link";
-import { Navbar, Nav, Container } from "react-bootstrap";
-import { FaInstagram, FaTwitter, FaLinkedinIn, FaGithub } from "react-icons/fa";
+import { Navbar, Nav, Container, Offcanvas } from "react-bootstrap";
 
-const Header = () => {
+function Header() {
   return (
-    <Navbar bg="dark" variant="dark" expand="lg" sticky="top">
-      <Container>
-        {/* Brand / Logo */}
-        <Navbar.Brand
-          as={Link}
-          href="/"
-          title="Nikhil Mishra"
-          className="text-light fw-bold"
+    <>
+      {["sm"].map((expand) => (
+        <Navbar
+          key={expand}
+          expand={expand}
+          fixed="top"
+          className="navbar-transparent"
         >
-          Nikhil Mishra
-        </Navbar.Brand>
-
-        {/* Toggle for Mobile */}
-        <Navbar.Toggle aria-controls="main-navbar" />
-
-        {/* Navbar Links */}
-        <Navbar.Collapse id="main-navbar">
-          <Nav className="ms-auto align-items-lg-center">
-            <Nav.Link
-              as={Link}
-              href="/"
-              title="Home"
-              className="text-light mx-2"
+          <Container>
+            <Navbar.Brand href="/" title="Nikhil Mishra">
+              Nikhil Mishra
+            </Navbar.Brand>
+            <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} />
+            <Navbar.Offcanvas
+              id={`offcanvasNavbar-expand-${expand}`}
+              aria-labelledby={`offcanvasNavbarLabel-expand-${expand}`}
+              placement="end"
             >
-              Home
-            </Nav.Link>
-            <Nav.Link
-              as={Link}
-              href="/about-me"
-              title="About Me"
-              className="text-light mx-2"
-            >
-              About Me
-            </Nav.Link>
-            <Nav.Link
-              as={Link}
-              href="/services"
-              title="Services"
-              className="text-light mx-2"
-            >
-              Services
-            </Nav.Link>
-            <Nav.Link
-              as={Link}
-              href="/portfolio"
-              title="Portfolio"
-              className="text-light mx-2"
-            >
-              Portfolio
-            </Nav.Link>
-            <Nav.Link
-              as={Link}
-              href="/tools"
-              title="Tools"
-              className="text-light mx-2"
-            >
-              Tools
-            </Nav.Link>
-            <Nav.Link
-              as={Link}
-              href="/articles"
-              title="Articles"
-              className="text-light mx-2"
-            >
-              Articles
-            </Nav.Link>
-            <Nav.Link
-              as={Link}
-              href="/contact-me"
-              title="Contact Me"
-              className="text-light mx-2"
-            >
-              Contact Me
-            </Nav.Link>
-
-            {/* Social Icons */}
-            <div className="d-flex ms-lg-3">
-              <Link
-                href="https://github.com/nikhil7476/"
-                title="GitHub: nikhil7476"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="mx-2"
-              >
-                <FaGithub />
-              </Link>
-              <Link
-                href="https://www.instagram.com/mishra_nikhil01/"
-                title="Instagram: mishra_nikhil01"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="mx-2"
-              >
-                <FaInstagram />
-              </Link>
-              <Link
-                href="https://www.linkedin.com/in/nikhil-mishra-664672180/"
-                title="LinkedIn: Nikhil Mishra"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="mx-2"
-              >
-                <FaLinkedinIn />
-              </Link>
-              <Link
-                href="https://x.com/mishranikhil01/"
-                title="Twitter: mishranikhil01"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="mx-2"
-              >
-                <FaTwitter />
-              </Link>
-            </div>
-          </Nav>
-        </Navbar.Collapse>
-      </Container>
-    </Navbar>
+              <Offcanvas.Header closeButton>
+                <Offcanvas.Title id={`offcanvasNavbarLabel-expand-${expand}`}>
+                  Nikhil Mishra
+                </Offcanvas.Title>
+              </Offcanvas.Header>
+              <Offcanvas.Body>
+                <Nav className="justify-content-end flex-grow-1">
+                  <Nav.Link href="/" title="Home">
+                    Home
+                  </Nav.Link>
+                  <Nav.Link href="/about-me" title="About Me">
+                    About Me
+                  </Nav.Link>
+                  <Nav.Link href="/services" title="Services">
+                    Services
+                  </Nav.Link>
+                  <Nav.Link href="/portfolio" title="Portfolio">
+                    Portfolio
+                  </Nav.Link>
+                  <Nav.Link href="/tools" title="Tools">
+                    Tools
+                  </Nav.Link>
+                  <Nav.Link href="/articles" title="Articles">
+                    Articles
+                  </Nav.Link>
+                  <Nav.Link href="/contact-me" title="Contact Me">
+                    Contact Me
+                  </Nav.Link>
+                </Nav>
+              </Offcanvas.Body>
+            </Navbar.Offcanvas>
+          </Container>
+        </Navbar>
+      ))}
+    </>
   );
-};
+}
 
 export default Header;
