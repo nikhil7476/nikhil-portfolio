@@ -104,7 +104,11 @@ function About() {
                   className="statValue"
                   enableScrollSpy
                   scrollSpyOnce
-                />
+                >
+                  {({ countUpRef }) => (
+                    <span ref={countUpRef} className="statValue" />
+                  )}
+                </CountUp>
                 <p>{stat.label}</p>
               </Col>
             ))}
