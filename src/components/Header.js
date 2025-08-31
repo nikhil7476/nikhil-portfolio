@@ -27,25 +27,49 @@ function Header() {
               </Offcanvas.Header>
               <Offcanvas.Body>
                 <Nav className="justify-content-end flex-grow-1">
-                  <Nav.Link href="/" title="Home">
+                  <Nav.Link href="/" title="Home" className="text-light mx-2">
                     Home
                   </Nav.Link>
-                  <Nav.Link href="/about-me" title="About Me">
+                  <Nav.Link
+                    href="/about-me"
+                    title="About Me"
+                    className="text-light mx-2"
+                  >
                     About Me
                   </Nav.Link>
-                  <Nav.Link href="/services" title="Services">
+                  <Nav.Link
+                    href="/services"
+                    title="Services"
+                    className="text-light mx-2"
+                  >
                     Services
                   </Nav.Link>
-                  <Nav.Link href="/portfolio" title="Portfolio">
+                  <Nav.Link
+                    href="/portfolio"
+                    title="Portfolio"
+                    className="text-light mx-2"
+                  >
                     Portfolio
                   </Nav.Link>
-                  <Nav.Link href="/tools" title="Tools">
+                  <Nav.Link
+                    href="/tools"
+                    title="Tools"
+                    className="text-light mx-2"
+                  >
                     Tools
                   </Nav.Link>
-                  <Nav.Link href="/articles" title="Articles">
+                  <Nav.Link
+                    href="/articles"
+                    title="Articles"
+                    className="text-light mx-2"
+                  >
                     Articles
                   </Nav.Link>
-                  <Nav.Link href="/contact-me" title="Contact Me">
+                  <Nav.Link
+                    href="/contact-me"
+                    title="Contact Me"
+                    className="text-light mx-2"
+                  >
                     Contact Me
                   </Nav.Link>
                 </Nav>
