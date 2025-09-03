@@ -5,6 +5,7 @@ import testimonialData from "@/utils/testimonialData";
 import MetaHead from "@/components/MetaHead";
 import Banner from "@/components/Banner";
 import bannerData from "@/utils/bannerData";
+import servicesData from "@/utils/servicesData";
 import accordionData from "@/utils/accordionData";
 import FaqAccordion from "@/components/FaqAccordion";
 import { Container, Row, Col, Card, Button } from "react-bootstrap";
@@ -19,7 +20,7 @@ export default function Services() {
       <section>
         <Container className="my-5">
           <Row className="g-4">
-            {accordionData.services.main.map((service) => (
+            {servicesData.map((service) => (
               <Col key={service.id} md={6} lg={4}>
                 <Card className="h-100 shadow-sm border-0">
                   <Card.Body className="d-flex flex-column">
@@ -27,10 +28,10 @@ export default function Services() {
                       {service.title}
                     </Card.Title>
                     <Card.Text className="text-muted flex-grow-1">
-                      {service.content}
+                      {service.metaDescription}
                     </Card.Text>
                     <Link
-                      href={`/services/${service.id}`}
+                      href={`/services/${service.slug}`}
                       passHref
                       legacyBehavior
                     >

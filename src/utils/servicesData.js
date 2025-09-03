@@ -19,13 +19,36 @@ const servicesData = [
   },
   {
     id: 3,
-    slug: "mobile-apps",
-    subtitle: "Mobile Apps",
-    title: "Mobile Apps",
+    slug: "mobile-app-development",
+    subtitle: "Mobile App Development",
+    title: "Mobile App Development",
     metaDescription: "Cross-platform mobile apps built with React Native.",
     featuredImage: "/service-assets/services-banner.jpg",
   },
-  // ... add more
+  {
+    id: 4,
+    slug: "digital-marketing",
+    subtitle: "Digital Marketing",
+    title: "Digital Marketing",
+    metaDescription: "Cross-platform mobile apps built with React Native.",
+    featuredImage: "/service-assets/services-banner.jpg",
+  },
+  {
+    id: 5,
+    slug: "seo-services",
+    subtitle: "SEO Services",
+    title: "SEO Services",
+    metaDescription: "Cross-platform mobile apps built with React Native.",
+    featuredImage: "/service-assets/services-banner.jpg",
+  },
+  {
+    id: 6,
+    slug: "wordpress-development",
+    subtitle: "WordPress Development",
+    title: "WordPress Development",
+    metaDescription: "Cross-platform mobile apps built with React Native.",
+    featuredImage: "/service-assets/services-banner.jpg",
+  },
 ];
 
 export default servicesData;
