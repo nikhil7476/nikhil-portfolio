@@ -217,6 +217,28 @@ textarea:active {
   text-shadow: 15px 0px 10px rgba(0, 0, 0, 0.5);
 }
 
+/* ===== Banner Styles ==== */
+.banner {
+  position: relative;
+  min-height: 450px;
+  z-index: 1;
+}
+
+.banner::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5) !important;
+  z-index: 0;
+}
+
+.banner .container,
+.banner .row,
+.banner .col {
+  position: relative;
+  z-index: 1;
+}
+
 /* ===== Responsive Typography ===== */
 @media (max-width: 768px) {
   h1 {
