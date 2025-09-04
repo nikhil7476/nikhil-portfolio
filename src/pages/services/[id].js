@@ -12,7 +12,7 @@ export default function ServicesDetail() {
   const router = useRouter();
   const { id } = router.query;
 
-  const service = servicesData.find((a) => a.slug === id);
+  const service = servicesData.myservices.find((a) => a.slug === id);
   const serviceFaqs = accordionData.services[id] || [];
 
   if (!service) {
