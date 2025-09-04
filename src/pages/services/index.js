@@ -39,7 +39,7 @@ export default function Services() {
                 xs={12}
                 className="mb-3"
               >
-                <div className="m-3">
+                <div>
                   <Link href={`/services/${service.slug}`}>
                     <Image
                       src={service.featuredImage}
@@ -52,7 +52,7 @@ export default function Services() {
                     />
                   </Link>
                 </div>
-                <div className="m-3 text-center">
+                <div className="p-2 text-center">
                   <Link
                     href={`/services/${service.slug}`}
                     title={service.title}
