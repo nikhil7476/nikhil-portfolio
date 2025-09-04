@@ -45,7 +45,7 @@ export default function BlogSingle() {
       <div
         className="banner d-flex align-items-center text-white"
         style={{
-          backgroundImage: `url(${article.featuredImage})`,
+          backgroundImage: `url(${article.bannerImage})`,
           backgroundSize: "cover",
           backgroundPosition: "center",
           minHeight: "450px",
