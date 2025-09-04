@@ -14,7 +14,8 @@ const articlesData = [
       "why businesses need a website",
     ],
     slug: "why-every-business-needs-a-modern-website-2025",
-    featuredImage: "/article-assets/nikhil-logo.jpeg",
+    featuredImage:
+      "/article-assets/why-every-business-needs-a-modern-website-2025-featured.jpg",
     bannerImage:
       "/article-assets/why-every-business-needs-a-modern-website-2025.jpg",
     blog: `
@@ -55,7 +56,8 @@ In 2025, your website is not just a business card — it’s a powerful growth t
       "SSR vs CSR",
     ],
     slug: "nextjs-vs-traditional-react-2025",
-    featuredImage: "/article-assets/nikhil-logo.jpeg",
+    featuredImage:
+      "/article-assets/nextjs-vs-traditional-react-2025-featured.jpg",
     bannerImage: "/article-assets/nextjs-vs-traditional-react-2025.jpg",
     blog: `
 Choosing the right technology stack is one of the most important decisions for developers and businesses alike. In 2025, React and Next.js remain two of the most popular options.
@@ -94,7 +96,8 @@ Both React and Next.js are powerful, but in 2025, Next.js has emerged as the sma
       "modern database",
     ],
     slug: "how-mongodb-powers-modern-applications",
-    featuredImage: "/article-assets/nikhil-logo.jpeg",
+    featuredImage:
+      "/article-assets/how-mongodb-powers-modern-applications-featured.jpg",
     bannerImage: "/article-assets/how-mongodb-powers-modern-applications.jpg",
     blog: `
 Every modern application needs a reliable database. While traditional relational databases like MySQL remain relevant, MongoDB has emerged as a favorite among developers due to its flexibility and scalability.
@@ -134,7 +137,8 @@ MongoDB’s flexibility and performance make it one of the best choices for deve
       "modern web apps",
     ],
     slug: "top-web-development-trends-2025",
-    featuredImage: "/article-assets/nikhil-logo.jpeg",
+    featuredImage:
+      "/article-assets/top-web-development-trends-2025-featured.jpg",
     bannerImage: "/article-assets/top-web-development-trends-2025.jpg",
     blog: `
 The web development landscape is evolving faster than ever. In 2025, businesses and developers must stay ahead by adopting new tools, technologies, and practices that redefine how websites and apps are built.
@@ -175,7 +179,8 @@ By staying updated with these trends, businesses can ensure their websites remai
       "Next.js tutorial",
     ],
     slug: "build-portfolio-nextjs-mongodb",
-    featuredImage: "/article-assets/nikhil-logo.jpeg",
+    featuredImage:
+      "/article-assets/build-portfolio-nextjs-mongodb-featured.jpg",
     bannerImage: "/article-assets/build-portfolio-nextjs-mongodb.jpg",
     blog: `
 A personal portfolio is the best way to showcase your skills, projects, and achievements. For developers, building one with Next.js and MongoDB offers both performance and scalability.
@@ -214,7 +219,8 @@ A portfolio built with Next.js and MongoDB is fast, scalable, and SEO-friendly �
       "SEO 2025",
     ],
     slug: "why-seo-is-essential-for-portfolio-website",
-    featuredImage: "/article-assets/nikhil-logo.jpeg",
+    featuredImage:
+      "/article-assets/why-seo-is-essential-for-portfolio-website-featured.jpg",
     bannerImage:
       "/article-assets/why-seo-is-essential-for-portfolio-website.jpg",
     blog: `

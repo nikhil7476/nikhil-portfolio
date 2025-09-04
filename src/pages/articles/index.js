@@ -20,7 +20,7 @@ export default function BlogList() {
                   variant="top"
                   src={article.featuredImage}
                   alt={article.title}
-                  style={{ height: "220px", objectFit: "cover" }}
+                  style={{ height: "300px", objectFit: "cover" }}
                 />
                 <Card.Body className="d-flex flex-column">
                   <Card.Title className="fw-semibold">
