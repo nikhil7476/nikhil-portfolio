@@ -89,7 +89,7 @@ function Header() {
               <Nav.Link
                 href="/contact-me"
                 title="Contact Me"
-                className="text-light mx-2 ctaButton"
+                className="text-light mx-2"
               >
                 Contact Me
               </Nav.Link>
