@@ -24,7 +24,7 @@ export default function ServicesDetail() {
       <div
         className="banner d-flex align-items-center text-white"
         style={{
-          backgroundImage: `url(${service.featuredImage})`,
+          backgroundImage: `url(${service.bannerImage})`,
           backgroundSize: "cover",
           backgroundPosition: "center",
           minHeight: "450px",
