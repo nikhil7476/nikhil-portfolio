@@ -1,41 +1,23 @@
 // utils/accordionData.js
 const accordionData = {
-  home: [
-    {
-      id: 1,
-      title: "What is this website about?",
-      content:
-        "This website is my personal portfolio showcasing my projects, blogs, and skills.",
-    },
-    {
-      id: 2,
-      title: "Which technologies are used?",
-      content: "I use Next.js, MongoDB, React Bootstrap, and React Icons.",
-    },
-    {
-      id: 3,
-      title: "Which technologies are used?",
-      content: "I use Next.js, MongoDB, React Bootstrap, and React Icons.",
-    },
-  ],
   about: [
     {
       id: 1,
-      title: "Who am I?",
+      title: "What inspired you to become a web developer?",
       content:
-        "I am a passionate web developer with experience in full-stack development.",
+        "I have always been passionate about technology and problem-solving. Web development allows me to combine creativity with logic to build solutions that help businesses grow and connect with people.",
     },
     {
       id: 2,
-      title: "What are my goals?",
+      title: "What technologies do you specialize in?",
       content:
-        "To create scalable, user-friendly applications and keep learning new technologies.",
+        "I primarily work with Next.js, React, Node.js, and MongoDB, along with tools like Tailwind CSS and Bootstrap. I choose technologies that best fit the project’s needs for performance and scalability.",
     },
     {
       id: 3,
-      title: "What are my goals?",
+      title: "How do you keep your skills up to date?",
       content:
-        "To create scalable, user-friendly applications and keep learning new technologies.",
+        "I consistently follow industry trends, take part in online courses, and build personal projects to experiment with new frameworks, libraries, and best practices.",
     },
   ],
   services: {
@@ -189,52 +171,61 @@ const accordionData = {
   portfolio: [
     {
       id: 1,
-      title: "Web Development",
-      content: "I build responsive and SEO-friendly web applications.",
+      title: "What types of projects are included in your portfolio?",
+      content:
+        "My portfolio showcases a mix of websites, web applications, and UI/UX designs created for businesses, personal brands, and startups.",
     },
     {
       id: 2,
-      title: "Backend Development",
-      content: "I create secure and scalable REST APIs with Node.js & MongoDB.",
+      title: "Can I request a demo of one of your projects?",
+      content:
+        "Yes, I can provide live demos or walkthroughs of selected projects upon request, depending on the client’s permission and project availability.",
     },
     {
       id: 3,
-      title: "Backend Development",
-      content: "I create secure and scalable REST APIs with Node.js & MongoDB.",
+      title: "Do you take custom project requests not shown in your portfolio?",
+      content:
+        "Absolutely. My portfolio represents only some of my work. I’m open to building custom projects tailored specifically to your requirements.",
     },
   ],
   tools: [
     {
       id: 1,
-      title: "Web Development",
-      content: "I build responsive and SEO-friendly web applications.",
+      title: "What development tools do you use most often?",
+      content:
+        "I regularly use VS Code, Git, GitHub, Figma, Postman, and MongoDB Compass, alongside frameworks like Next.js and React for web development.",
     },
     {
       id: 2,
-      title: "Backend Development",
-      content: "I create secure and scalable REST APIs with Node.js & MongoDB.",
+      title: "Do you also work with design tools?",
+      content:
+        "Yes, I work with Figma, Adobe XD, and Canva for wireframes and UI/UX design, ensuring smooth collaboration between design and development.",
     },
     {
       id: 3,
-      title: "Backend Development",
-      content: "I create secure and scalable REST APIs with Node.js & MongoDB.",
+      title: "How do you choose which tools to use for a project?",
+      content:
+        "I select tools based on the project’s scope, goals, and technical requirements. The focus is always on efficiency, performance, and scalability.",
     },
   ],
   contact: [
     {
       id: 1,
-      title: "Web Development",
-      content: "I build responsive and SEO-friendly web applications.",
+      title: "How soon can I expect a reply after contacting you?",
+      content:
+        "I usually respond to inquiries within 24–48 hours. For urgent projects, I try to reply as quickly as possible to keep things moving efficiently.",
     },
     {
       id: 2,
-      title: "Backend Development",
-      content: "I create secure and scalable REST APIs with Node.js & MongoDB.",
+      title: "What details should I include when reaching out?",
+      content:
+        "It’s helpful if you share your project goals, preferred timeline, and budget range. This allows me to give you a clear idea of how we can work together.",
     },
     {
       id: 3,
-      title: "Backend Development",
-      content: "I create secure and scalable REST APIs with Node.js & MongoDB.",
+      title: "Do you offer free consultations?",
+      content:
+        "Yes, I offer a short initial consultation free of charge to discuss your needs, goals, and potential solutions before starting the project.",
     },
   ],
 };
