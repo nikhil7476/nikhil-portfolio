@@ -29,7 +29,7 @@ function Footer() {
                   style={{ width: "75%", height: "auto" }}
                   className="mb-3"
                 />
-                <h3>Nikhil Mishra</h3>
+                <h2>Nikhil Mishra</h2>
               </Link>
             </Col>
             <Col xl={3} lg={3} md={6} sm={12} xs={12} className="mb-3">

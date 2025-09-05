@@ -1,5 +1,6 @@
 import { Navbar, Nav, Container, Offcanvas } from "react-bootstrap";
 import Image from "next/image";
+import Link from "next/link";
 
 function Header() {
   return (
@@ -38,15 +39,21 @@ function Header() {
         >
           <Offcanvas.Header closeButton>
             <Offcanvas.Title id="offcanvasNavbarLabel" className="text-light">
-              <Image
-                src="/nikhil-logo.jpeg"
-                width={50}
-                height={50}
+              <Link
+                href="/"
                 title="Nikhil Mishra"
-                alt="Nikhil Mishra Logo"
-                className="img rounded"
-              />{" "}
-              NIKHIL MISHRA
+                className="text-light fw-bold"
+              >
+                <Image
+                  src="/nikhil-logo.jpeg"
+                  width={50}
+                  height={50}
+                  title="Nikhil Mishra"
+                  alt="Nikhil Mishra Logo"
+                  className="img rounded"
+                />{" "}
+                NIKHIL MISHRA
+              </Link>
             </Offcanvas.Title>
           </Offcanvas.Header>
 
