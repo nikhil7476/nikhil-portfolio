@@ -6,6 +6,7 @@ import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 import articlesData from "@/utils/articlesData";
 import Link from "next/link";
+import ArticlesPreview from "@/components/ArticlesPreview";
 
 export default function BlogSingle() {
   const router = useRouter();
@@ -108,6 +109,20 @@ export default function BlogSingle() {
                 </Link>
               )}
             </Col>
+          </Row>
+        </Container>
+      </section>
+      <section>
+        <Container>
+          <Row>
+            <Col>
+              <span>Read Latest</span>
+              <h2>Read More News & Articles</h2>
+              <hr />
+            </Col>
+          </Row>
+          <Row>
+            <ArticlesPreview />
           </Row>
         </Container>
       </section>
