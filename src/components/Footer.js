@@ -19,7 +19,7 @@ function Footer() {
         <Container>
           <Row className="my-5">
             <Col xl={3} lg={3} md={6} sm={12} xs={12} className="mb-3">
-              <Link href="/" title="Home">
+              <Link href="/" title="Nikhil Mishra">
                 <Image
                   src="/nikhil-logo.jpeg"
                   width={460}
