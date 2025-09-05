@@ -12,8 +12,6 @@ import ContactForm from "@/components/ContactForm";
 import ArticlesPreview from "@/components/ArticlesPreview";
 
 function Home() {
-  console.log(homeData.section1.subheading, "2345678sdfgh");
-
   return (
     <>
       <MetaHead page="home" />
