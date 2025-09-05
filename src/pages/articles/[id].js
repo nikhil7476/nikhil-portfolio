@@ -1,7 +1,7 @@
 import { useRouter } from "next/router";
 import Head from "next/head";
-import { Container } from "react-bootstrap";
-import { FaCalendarAlt } from "react-icons/fa";
+import { Container, Row, Col } from "react-bootstrap";
+import { FaCalendarAlt, FaArrowLeft, FaArrowRight } from "react-icons/fa";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 import articlesData from "@/utils/articlesData";
@@ -11,7 +11,8 @@ export default function BlogSingle() {
   const router = useRouter();
   const { id } = router.query;
 
-  const article = articlesData.find((a) => a.slug === id);
+  const articleIndex = articlesData.findIndex((a) => a.slug === id);
+  const article = articlesData[articleIndex];
 
   if (!article) {
     return (
@@ -21,7 +22,12 @@ export default function BlogSingle() {
     );
   }
 
-  // Your site base URL
+  const prevArticle = articleIndex > 0 ? articlesData[articleIndex - 1] : null;
+  const nextArticle =
+    articleIndex < articlesData.length - 1
+      ? articlesData[articleIndex + 1]
+      : null;
+
   const baseUrl = "https://mishraji-official-portfolio.vercel.app/articles/";
   const canonicalUrl = `${baseUrl}${article.slug}`;
 
@@ -72,18 +78,37 @@ export default function BlogSingle() {
         </Container>
       </div>
       <section>
-        <Container className="py-5">
-          <h2 className="fw-bold mb-3">{article.title}</h2>
-          <p className="d-flex align-items-center gap-2 mb-4">
-            <FaCalendarAlt /> Published in 2025
-          </p>
-
-          {/* Render blog content as Markdown */}
-          <div className="blog-content fs-5 text-dark">
-            <ReactMarkdown remarkPlugins={[remarkGfm]}>
-              {article.blog}
-            </ReactMarkdown>
-          </div>
+        <Container>
+          <Row>
+            <Col>
+              <h2>{article.title}</h2>
+              <p>
+                <FaCalendarAlt /> {article.date} By Nikhil Mishra
+              </p>
+              <div>
+                <ReactMarkdown remarkPlugins={[remarkGfm]}>
+                  {article.blog}
+                </ReactMarkdown>
+              </div>
+              <hr />
+            </Col>
+          </Row>
+          <Row>
+            <Col xl={6} lg={6} md={6} sm={6} xs={6} className="mb-3 text-start">
+              {prevArticle && (
+                <Link href={`/articles/${prevArticle.slug}`}>
+                  <FaArrowLeft /> Previous Article
+                </Link>
+              )}
+            </Col>
+            <Col xl={6} lg={6} md={6} sm={6} xs={6} className="mb-3 text-end">
+              {nextArticle && (
+                <Link href={`/articles/${nextArticle.slug}`}>
+                  Next Article <FaArrowRight />
+                </Link>
+              )}
+            </Col>
+          </Row>
         </Container>
       </section>
     </>

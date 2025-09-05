@@ -3,6 +3,7 @@
 const articlesData = [
   {
     id: 1,
+    date: "15 Aug, 2025",
     title: "Why Every Business Needs a Modern Website in 2025",
     metaTitle: "Modern Websites for Businesses in 2025 | Benefits & Trends",
     metaDescription:
@@ -45,6 +46,7 @@ In 2025, your website is not just a business card — it’s a powerful growth t
   },
   {
     id: 2,
+    date: "20 Aug, 2025",
     title: "Next.js vs Traditional React: Which Should You Choose in 2025?",
     metaTitle: "Next.js vs React 2025 | Best Framework for Web Development",
     metaDescription:
@@ -85,6 +87,7 @@ Both React and Next.js are powerful, but in 2025, Next.js has emerged as the sma
   },
   {
     id: 3,
+    date: "25 Aug, 2025",
     title: "How MongoDB Powers Modern Applications",
     metaTitle: "Benefits of MongoDB for Developers | NoSQL Database Explained",
     metaDescription:
@@ -126,6 +129,7 @@ MongoDB’s flexibility and performance make it one of the best choices for deve
   },
   {
     id: 4,
+    date: "30 Aug, 2025",
     title: "Top Web Development Trends to Watch in 2025",
     metaTitle: "Web Development Trends 2025 | Future of Web Design & Coding",
     metaDescription:
@@ -167,6 +171,7 @@ By staying updated with these trends, businesses can ensure their websites remai
   },
   {
     id: 5,
+    date: "05 Sep, 2025",
     title: "How to Build a Personal Portfolio Website with Next.js & MongoDB",
     metaTitle:
       "Build a Portfolio Website with Next.js & MongoDB | Step-by-Step Guide",
@@ -208,6 +213,7 @@ A portfolio built with Next.js and MongoDB is fast, scalable, and SEO-friendly �
   },
   {
     id: 6,
+    date: "10 Sep, 2025",
     title: "Why SEO is Essential for Your Portfolio Website",
     metaTitle: "SEO for Portfolio Websites | Boost Visibility & Career Growth",
     metaDescription:

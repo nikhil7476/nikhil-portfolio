@@ -20,8 +20,8 @@ function ArticlesPreview() {
             xs={12}
             className="mb-3"
           >
-            <div>
-              <Link href={`/articles/${article.slug}`} title={article.title}>
+            <Link href={`/articles/${article.slug}`} title={article.title}>
+              <div>
                 <Image
                   src={article.featuredImage}
                   alt={article.title}
@@ -31,13 +31,9 @@ function ArticlesPreview() {
                   className="img-fluid rounded"
                   style={{ width: "100%", height: "auto" }}
                 />
-              </Link>
-            </div>
-            <div className="m-2">
-              <Link href={`/articles/${article.slug}`} title={article.title}>
-                {article.title}
-              </Link>
-            </div>
+              </div>
+              <div className="m-2">{article.title}</div>
+            </Link>
           </Col>
         ))}
       </Row>
