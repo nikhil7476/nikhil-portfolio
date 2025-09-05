@@ -1,4 +1,5 @@
 import { Navbar, Nav, Container, Offcanvas } from "react-bootstrap";
+import Image from "next/image";
 
 function Header() {
   return (
@@ -14,6 +15,14 @@ function Header() {
           title="Nikhil Mishra"
           className="text-light fw-bold"
         >
+          <Image
+            src="/nikhil-logo.jpeg"
+            width={50}
+            height={50}
+            title="Nikhil Mishra"
+            alt="Nikhil Mishra Logo"
+            className="img rounded"
+          />{" "}
           NIKHIL MISHRA
         </Navbar.Brand>
 
@@ -29,6 +38,14 @@ function Header() {
         >
           <Offcanvas.Header closeButton>
             <Offcanvas.Title id="offcanvasNavbarLabel" className="text-light">
+              <Image
+                src="/nikhil-logo.jpeg"
+                width={50}
+                height={50}
+                title="Nikhil Mishra"
+                alt="Nikhil Mishra Logo"
+                className="img rounded"
+              />{" "}
               NIKHIL MISHRA
             </Offcanvas.Title>
           </Offcanvas.Header>
@@ -72,7 +89,7 @@ function Header() {
               <Nav.Link
                 href="/contact-me"
                 title="Contact Me"
-                className="text-light mx-2"
+                className="text-light mx-2 ctaButton"
               >
                 Contact Me
               </Nav.Link>
