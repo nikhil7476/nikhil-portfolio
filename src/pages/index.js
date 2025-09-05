@@ -128,10 +128,10 @@ function Home() {
       <section>
         <Container>
           <Row>
-            <Col xl={6} lg={6} md={6} sm={12} xs={12} className="mb-3" >
+            <Col xl={6} lg={6} md={6} sm={12} xs={12} className="mb-3">
               <TestimonialCarousel data={testimonialData.home} />
             </Col>
-            <Col xl={6} lg={6} md={6} sm={12} xs={12} className="mb-3" >
+            <Col xl={6} lg={6} md={6} sm={12} xs={12} className="mb-3">
               <ContactForm />
             </Col>
           </Row>

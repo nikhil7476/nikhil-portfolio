@@ -8,9 +8,9 @@ import MetaHead from "@/components/MetaHead";
 import Banner from "@/components/Banner";
 import bannerData from "@/utils/bannerData";
 import aboutData from "@/utils/aboutData";
-import ContactForm from "@/components/ContactForm";
 import TestimonialCarousel from "@/components/TestimonialCarousel";
 import testimonialData from "@/utils/testimonialData";
+import ContactForm from "@/components/ContactForm";
 import FaqAccordion from "@/components/FaqAccordion";
 import accordionData from "@/utils/accordionData";
 

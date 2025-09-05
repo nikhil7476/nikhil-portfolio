@@ -1,11 +1,11 @@
+import { useState, useMemo } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { Container, Row, Col, Form } from "react-bootstrap";
-import { useState, useMemo } from "react";
-import articlesData from "@/utils/articlesData";
+import MetaHead from "@/components/MetaHead";
 import Banner from "@/components/Banner";
 import bannerData from "@/utils/bannerData";
-import MetaHead from "@/components/MetaHead";
+import articlesData from "@/utils/articlesData";
 
 export default function BlogList() {
   const [search, setSearch] = useState("");

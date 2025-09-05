@@ -1,16 +1,16 @@
 import Link from "next/link";
+import Image from "next/image";
+import { Container, Row, Col } from "react-bootstrap";
 import { FaArrowRight } from "react-icons/fa";
-import TestimonialCarousel from "@/components/TestimonialCarousel";
-import testimonialData from "@/utils/testimonialData";
 import MetaHead from "@/components/MetaHead";
 import Banner from "@/components/Banner";
 import bannerData from "@/utils/bannerData";
 import servicesData from "@/utils/servicesData";
-import accordionData from "@/utils/accordionData";
-import FaqAccordion from "@/components/FaqAccordion";
-import { Container, Row, Col } from "react-bootstrap";
+import TestimonialCarousel from "@/components/TestimonialCarousel";
+import testimonialData from "@/utils/testimonialData";
 import ContactForm from "@/components/ContactForm";
-import Image from "next/image";
+import FaqAccordion from "@/components/FaqAccordion";
+import accordionData from "@/utils/accordionData";
 
 export default function Services() {
   return (

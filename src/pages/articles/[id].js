@@ -1,11 +1,11 @@
 import { useRouter } from "next/router";
 import Head from "next/head";
-import { Container, Row, Col } from "react-bootstrap";
-import { FaCalendarAlt, FaArrowLeft, FaArrowRight } from "react-icons/fa";
+import Link from "next/link";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
+import { Container, Row, Col } from "react-bootstrap";
+import { FaCalendarAlt, FaArrowLeft, FaArrowRight } from "react-icons/fa";
 import articlesData from "@/utils/articlesData";
-import Link from "next/link";
 import ArticlesPreview from "@/components/ArticlesPreview";
 
 export default function BlogSingle() {

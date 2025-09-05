@@ -9,8 +9,8 @@ import Banner from "@/components/Banner";
 import bannerData from "@/utils/bannerData";
 import contactData from "@/utils/contactData";
 import ContactForm from "@/components/ContactForm";
-import accordionData from "@/utils/accordionData";
 import FaqAccordion from "@/components/FaqAccordion";
+import accordionData from "@/utils/accordionData";
 
 function Contact() {
   return (
@@ -20,14 +20,7 @@ function Contact() {
       <section>
         <Container>
           <Row>
-            <Col
-              xl={6}
-              lg={6}
-              md={6}
-              sm={12}
-              xs={12}
-              className="mb-3"
-            >
+            <Col xl={6} lg={6} md={6} sm={12} xs={12} className="mb-3">
               <span>{contactData.subheading}</span>
               <h2>{contactData.title}</h2>
               <hr />
@@ -48,14 +41,7 @@ function Contact() {
                 </li>
               </ul>
             </Col>
-            <Col
-              xl={6}
-              lg={6}
-              md={6}
-              sm={12}
-              xs={12}
-              className="mb-3"
-            >
+            <Col xl={6} lg={6} md={6} sm={12} xs={12} className="mb-3">
               <ContactForm />
             </Col>
           </Row>
