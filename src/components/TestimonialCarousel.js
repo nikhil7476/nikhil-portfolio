@@ -21,6 +21,7 @@ const TestimonialCarousel = ({ data }) => {
               <Image
                 src={item.image}
                 alt={item.name}
+                title={item.name}
                 className="rounded-circle mb-3"
                 width={80}
                 height={80}
