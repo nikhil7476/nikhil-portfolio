@@ -29,7 +29,7 @@ export default function BlogSingle() {
       ? articlesData[articleIndex + 1]
       : null;
 
-  const baseUrl = "https://mishraji-official-portfolio.vercel.app/articles/";
+  const baseUrl = `${process.env.NEXT_PUBLIC_BASE_URL}articles/`;
   const canonicalUrl = `${baseUrl}${article.slug}`;
 
   return (
