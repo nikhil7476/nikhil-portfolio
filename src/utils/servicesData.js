@@ -15,8 +15,6 @@ const servicesData = {
       metaDescription: "I build responsive and SEO-friendly web applications.",
       bannerImage: "/service-assets/web-development-banner.png",
       featuredImage: "/service-assets/web-development-featured.png",
-      featuredImageWidth: "450",
-      featuredImageHeight: "450",
     },
     {
       id: 2,
@@ -27,8 +25,6 @@ const servicesData = {
         "I create secure and scalable REST APIs with Node.js & MongoDB.",
       bannerImage: "/service-assets/ui-ux-design-banner.png",
       featuredImage: "/service-assets/ui-ux-design-featured.png",
-      featuredImageWidth: "450",
-      featuredImageHeight: "450",
     },
     {
       id: 3,
@@ -38,8 +34,6 @@ const servicesData = {
       metaDescription: "Cross-platform mobile apps built with React Native.",
       bannerImage: "/service-assets/mobile-app-development-banner.png",
       featuredImage: "/service-assets/mobile-app-development-featured.png",
-      featuredImageWidth: "450",
-      featuredImageHeight: "450",
     },
     {
       id: 4,
@@ -49,8 +43,6 @@ const servicesData = {
       metaDescription: "Cross-platform mobile apps built with React Native.",
       bannerImage: "/service-assets/digital-marketing-banner.png",
       featuredImage: "/service-assets/digital-marketing-featured.png",
-      featuredImageWidth: "450",
-      featuredImageHeight: "450",
     },
     {
       id: 5,
@@ -60,8 +52,6 @@ const servicesData = {
       metaDescription: "Cross-platform mobile apps built with React Native.",
       bannerImage: "/service-assets/seo-services-banner.png",
       featuredImage: "/service-assets/seo-services-featured.png",
-      featuredImageWidth: "450",
-      featuredImageHeight: "450",
     },
     {
       id: 6,
@@ -71,8 +61,6 @@ const servicesData = {
       metaDescription: "Cross-platform mobile apps built with React Native.",
       bannerImage: "/service-assets/wordpress-development-banner.png",
       featuredImage: "/service-assets/wordpress-development-featured.png",
-      featuredImageWidth: "450",
-      featuredImageHeight: "450",
     },
   ],
 };

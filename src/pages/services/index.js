@@ -45,8 +45,8 @@ export default function Services() {
                       src={service.featuredImage}
                       alt={service.title}
                       title={service.title}
-                      width={service.featuredImageWidth}
-                      height={service.featuredImageHeight}
+                      width={450}
+                      height={450}
                       className="img-fluid rounded"
                       style={{ width: "100%", height: "auto" }}
                     />
