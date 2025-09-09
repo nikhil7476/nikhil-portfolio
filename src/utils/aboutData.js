@@ -17,7 +17,7 @@ const aboutData = {
       "Growth Oriented",
     ],
 
-    image: "/website-assets/nikhil-logo.jpeg",
+    image: "/website-assets/Nikhil-Mishra.jpeg",
     imageAlt: "Nikhil Mishra",
     imageTitle: "Nikhil Mishra",
     ctaText: "Contact Me",

@@ -41,8 +41,8 @@ function About() {
                 src={aboutData.about.image}
                 alt={aboutData.about.imageAlt}
                 title={aboutData.about.imageTitle}
-                width={460}
-                height={460}
+                width={450}
+                height={500}
                 className="img-fluid rounded"
                 style={{ width: "100%", height: "auto" }}
               />

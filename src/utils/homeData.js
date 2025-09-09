@@ -19,7 +19,7 @@ const homeData = {
     title: "Why Choose Nikhil Mishra",
     ctaText: "Explore My Services",
     ctaLink: "/services",
-    image: "/website-assets/why-choose-us.jpg",
+    image: "/website-assets/Nikhil-Mishra.jpeg",
     imageAlt: "why-me",
     imageTitle: "Why Me",
     iconBox: [

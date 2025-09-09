@@ -31,8 +31,8 @@ function Home() {
                 src={homeData.section1.image}
                 alt={homeData.section1.imageAlt}
                 title={homeData.section1.imageTitle}
-                width={500}
-                height={600}
+                width={450}
+                height={500}
                 className="img-fluid rounded"
               />
             </Col>
