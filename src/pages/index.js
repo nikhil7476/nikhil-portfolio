@@ -105,7 +105,7 @@ function Home() {
                 alt={homeData.section2.imageAlt}
                 title={homeData.section2.imageTitle}
                 width={450}
-                height={500}
+                height={410}
                 className="img-fluid rounded"
               />
             </Col>
