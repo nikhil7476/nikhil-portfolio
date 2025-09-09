@@ -10,7 +10,7 @@ const homeData = {
       "At Nimitech, we’re a tight-knit team of passionate codes and digital marketing experts from around the globe. With over 50 talented individuals across 5 countries, we’re ready to tackle any challenge in the field of software development. Our diverse perspectives and deep experience ensure that your campaigns are crafted with precision and delivered with impact.",
     ctaText: "Know More About Me",
     ctaLink: "/about-me",
-    image: "/website-assets/about-me.png",
+    image: "/website-assets/Nikhil-Mishra.jpeg",
     imageAlt: "about-me",
     imageTitle: "About Me",
   },
