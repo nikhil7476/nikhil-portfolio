@@ -83,7 +83,7 @@ function Home() {
                     key={index}
                     className="d-flex align-items-start gap-3 mb-3"
                   >
-                    <div className="fs-5">{item.icon}</div>
+                    <div className="fs-6">{item.icon}</div>
                     <div>
                       <h3>{item.title}</h3>
                       <p>{item.description}</p>
